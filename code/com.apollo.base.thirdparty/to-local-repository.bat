@@ -1,0 +1,2 @@
+call mvn install:install-file -Dfile=swing.set.2.jar -DgroupId=com.apollo.base.thirdparty -DartifactId=swing.set.2 -Dversion=1.0.0 -Dpackaging=jar -DgeneratePom=true
+call mvn install:install-file -Dfile=alloy.laf.jar -DgroupId=com.apollo.base.thirdparty -DartifactId=alloy.laf -Dversion=1.0.0 -Dpackaging=jar -DgeneratePom=true
