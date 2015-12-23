@@ -9,10 +9,19 @@
     <version>1.0.0</version>
   </parent>
 
-  <groupId>com.apollo.base</groupId>
-  <artifactId>util</artifactId>
+  <groupId>com.apollo.base.pom</groupId>
+  <artifactId>osgi</artifactId>
   <version>${version}</version>
+  <packaging>pom</packaging>
 
-  <name>com.apollo.base.util</name>
-  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.util</url>
+  <name>com.apollo.base.pom.osgi</name>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.pom.osgi</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>5.0.0</version>
+    </dependency>
+  </dependencies>
 </project>

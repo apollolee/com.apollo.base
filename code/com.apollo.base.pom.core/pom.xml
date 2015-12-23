@@ -5,17 +5,17 @@
 
   <parent>
     <groupId>com.apollo.base.pom</groupId>
-    <artifactId>com.apollo.base.pom.version</artifactId>
+    <artifactId>version</artifactId>
     <version>1.0.0</version>
   </parent>
 
   <groupId>com.apollo.base.pom</groupId>
-  <artifactId>com.apollo.base.pom.core</artifactId>
+  <artifactId>core</artifactId>
   <version>${version}</version>
   <packaging>pom</packaging>
 
-  <name>com.apollo.swing.laf</name>
-  <url>>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.pom.core</url>
+  <name>com.apollo.base.pom.core</name>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.pom.core</url>
 
   <dependencies>
     <dependency>

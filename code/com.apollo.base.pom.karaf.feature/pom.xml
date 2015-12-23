@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.apollo.base.pom</groupId>
+    <artifactId>karaf</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.apollo.base.pom.karaf</groupId>
+  <artifactId>feature</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <name>com.apollo.base.pom.karaf.feature</name>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.pom.karaf.feature</url>
+
+  <properties>
+    <deploy.output>undefined</deploy.output>
+    <deploy.home>undefined</deploy.home>
+
+    <deploy.feature>${deploy.output}/system/${deploy.home}/${project.artifactId}</deploy.feature>
+    <deploy.feature.name>${project.version}/${project.artifactId}-${project.version}.xml</deploy.feature.name>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-clean-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>clean.deploy</id>
+            <phase>clean</phase>
+
+            <goals>
+              <goal>clean</goal>
+            </goals>
+
+            <configuration>
+              <filesets>
+                <fileset>
+                  <directory>${deploy.feature}</directory>
+                </fileset>
+              </filesets>
+
+              <failOnError>false</failOnError>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>install.copy</id>
+            <phase>install</phase>
+
+            <goals>
+              <goal>run</goal>
+            </goals>
+
+            <configuration>
+              <target name='install.copy'>
+                <taskdef name='if' classname='ise.antelope.tasks.IfTask'/>
+                <if name='deploy.output' value='undefined'>
+                  <else>
+                    <copy file='${project.build.directory}/feature/feature.xml' tofile='${deploy.feature}/${deploy.feature.name}' overwrite='true' failonerror='true'/>
+                  </else>
+                </if>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+
+        <dependencies>
+          <dependency>
+            <groupId>org.tigris.antelope</groupId>
+            <artifactId>antelopetasks</artifactId>
+            <version>3.2.10</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>
