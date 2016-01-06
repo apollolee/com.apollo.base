@@ -24,6 +24,8 @@
     <bundle.web.contextpath/>
     <bundle.requir.bundle/>
     <bundle.dynamicimport.package/>
+    <bundle.fragment.host/>
+    <bundle.blueprint.annotation>false</bundle.blueprint.annotation>
 
     <deploy.output>undefined</deploy.output>
     <deploy.conf>undefined</deploy.conf>
@@ -124,6 +126,8 @@
 
             <Require-Bundle>${bundle.requir.bundle}</Require-Bundle>
             <DynamicImport-Package>${bundle.dynamicimport.package}</DynamicImport-Package>
+            <Fragment-Host>${bundle.fragment.host}</Fragment-Host>
+            <Bundle-Blueprint-Annotation>${bundle.blueprint.annotation}</Bundle-Blueprint-Annotation>
           </instructions>
         </configuration>
       </plugin>
