@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-1-29 ÉÏÎç10:00:03¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-1-29 ä¸Šåˆ10:00:03ã€‚
  */
 package com.apollo.base.util;
 
@@ -17,54 +17,54 @@ import java.text.SimpleDateFormat;
 import javax.swing.Icon;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºIBaseConstants.java</p>
- * <p>ÀàĞÍÃèÊö£º»ù´¡³£Á¿½Ó¿Ú¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-1-29</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šIBaseConstants.java</p>
+ * <p>ç±»å‹æè¿°ï¼šåŸºç¡€å¸¸é‡æ¥å£ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-1-29</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 public interface IBaseConstants {
 
     /*------------------------------------- Public Static Final Field -------------------------------------*/
 
     /**
-     * Öµ------±¾µØÍø¹Ü¡£
+     * å€¼------æœ¬åœ°ç½‘ç®¡ã€‚
      */
     public static final String VALUE_LOCALEMS = "EMS{local}";
 
     /**
-     * ĞĞ¸ß------±í¸ñÈ±Ê¡µÄĞĞ¸ß¡£
+     * è¡Œé«˜------è¡¨æ ¼ç¼ºçœçš„è¡Œé«˜ã€‚
      */
     public static final int RowHeight_Table_Default = 23;
 
     /**
-     * ÑÕÉ«------½ûÖ¹±à¼­µÄ±³¾°É«¡£
+     * é¢œè‰²------ç¦æ­¢ç¼–è¾‘çš„èƒŒæ™¯è‰²ã€‚
      */
     public static final Color Color_Bg_Editable_False = new Color(241, 240, 227);
 
     /**
-     * ÑÕÉ«------ÆæÊıĞĞµÄ±³¾°É«¡£
+     * é¢œè‰²------å¥‡æ•°è¡Œçš„èƒŒæ™¯è‰²ã€‚
      */
     public static final Color Color_Bg_Row_Odd = new Color(247, 243, 231);//new Color(178, 216, 255);
 
     /**
-     * ÑÕÉ«------Å¼ÊıĞĞµÄ±³¾°É«¡£
+     * é¢œè‰²------å¶æ•°è¡Œçš„èƒŒæ™¯è‰²ã€‚
      */
     public static final Color Color_Bg_Row_Even = Color.WHITE;
 
     /**
-     * ¸ñÊ½------ÈÕÆÚ¡£
+     * æ ¼å¼------æ—¥æœŸã€‚
      */
     public static final SimpleDateFormat Format_Date = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
@@ -184,1199 +184,1199 @@ public interface IBaseConstants {
     public static final int GBC_LAST_LINE_END = GridBagConstraints.LAST_LINE_END;
 
     /**
-     * È±Ê¡µÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * ç¼ºçœçš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_DEFAULT = new Insets(2, 2, 2, 2);
 
     /**
-     * ÎŞ¿Õ¼äµÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * æ— ç©ºé—´çš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_NoSpace = new Insets(0, 0, 0, 0);
 
     /**
-     * ×ÓÊÓÍ¼µÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * å­è§†å›¾çš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_SUBVIEW = new Insets(1, 18, 1, 2);
 
     /**
-     * ×óÌî³äµÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * å·¦å¡«å……çš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_LEFT = new Insets(0, 2, 0, 0);
 
     /**
-     * ÓÒÌî³äµÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * å³å¡«å……çš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_RIGHT = new Insets(0, 0, 0, 2);
 
     /**
-     * ×óÓÒÌî³äµÄGridBagConstraints.insets×Ö¶ÎÖµ¡£
+     * å·¦å³å¡«å……çš„GridBagConstraints.insetså­—æ®µå€¼ã€‚
      */
     public static final Insets INSETS_RIGHTANDLEFT = new Insets(0, 2, 0, 2);
 
     /**
-     * È±Ê¡µÄGridBagConstraints.ipadx×Ö¶ÎÖµ¡£
+     * ç¼ºçœçš„GridBagConstraints.ipadxå­—æ®µå€¼ã€‚
      */
     public static final int IPADX_DEFAULT = 2;
 
     /**
-     * ÎŞ¿Õ¼äµÄGridBagConstraints.ipadx×Ö¶ÎÖµ¡£
+     * æ— ç©ºé—´çš„GridBagConstraints.ipadxå­—æ®µå€¼ã€‚
      */
     public static final int IPADX_NoSpace = 0;
 
     /**
-     * È±Ê¡µÄGridBagConstraints.ipady×Ö¶ÎÖµ¡£
+     * ç¼ºçœçš„GridBagConstraints.ipadyå­—æ®µå€¼ã€‚
      */
     public static final int IPADY_DEFAULT = 2;
 
     /**
-     * ÎŞ¿Õ¼äµÄGridBagConstraints.ipady×Ö¶ÎÖµ¡£
+     * æ— ç©ºé—´çš„GridBagConstraints.ipadyå­—æ®µå€¼ã€‚
      */
     public static final int IPADY_NoSpace = 0;
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ãë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§’ã€‚
      */
     public static final String I18N_Second = BaseUtilities.getI18nMessage("Second");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²Ù×÷¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ“ä½œã€‚
      */
     public static final String I18N_Operation = BaseUtilities.getI18nMessage("Operation");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´òÓ¡¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ‰“å°ã€‚
      */
     public static final String I18N_Print = BaseUtilities.getI18nMessage("Print");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¼ÇÂ¼×ÜÊı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è®°å½•æ€»æ•°ã€‚
      */
     public static final String I18N_TotalCount = BaseUtilities.getI18nMessage("TotalCount");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ºÄÊ±¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è€—æ—¶ã€‚
      */
     public static final String I18N_ElapsedTime = BaseUtilities.getI18nMessage("ElapsedTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»ù±¾¹ıÂËÌõ¼ş¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åŸºæœ¬è¿‡æ»¤æ¡ä»¶ã€‚
      */
     public static final String I18N_BaseCondition = BaseUtilities.getI18nMessage("BaseCondition");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÓÃ»§±êÇ©¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç”¨æˆ·æ ‡ç­¾ã€‚
      */
     public static final String I18N_UserLabel = BaseUtilities.getI18nMessage("UserLabel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µØÀíÎ»ÖÃ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åœ°ç†ä½ç½®ã€‚
      */
     public static final String I18N_Location = BaseUtilities.getI18nMessage("Location");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËùÊôEMS¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ‰€å±EMSã€‚
      */
     public static final String I18N_ParentEms = BaseUtilities.getI18nMessage("ParentEms");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Éú²ú³§ÉÌ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç”Ÿäº§å‚å•†ã€‚
      */
     public static final String I18N_Vendor = BaseUtilities.getI18nMessage("Vendor");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Éè±¸ÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è®¾å¤‡ç±»å‹ã€‚
      */
     public static final String I18N_DeviceType = BaseUtilities.getI18nMessage("DeviceType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÍøÔªÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç½‘å…ƒç±»å‹ã€‚
      */
     public static final String I18N_NeType = BaseUtilities.getI18nMessage("NeType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡ÔñÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©ç±»å‹ã€‚
      */
     public static final String I18N_ChoiceType = BaseUtilities.getI18nMessage("ChoiceType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ä£ĞÍÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¨¡å‹ç±»å‹ã€‚
      */
     public static final String I18N_ModelType = BaseUtilities.getI18nMessage("ModelType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²úÆ·Ãû³Æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------äº§å“åç§°ã€‚
      */
     public static final String I18N_ProductName = BaseUtilities.getI18nMessage("ProductName");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±¾µØÍø¹Ü¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœ¬åœ°ç½‘ç®¡ã€‚
      */
     public static final String I18N_LocalEms = BaseUtilities.getI18nMessage("LocalEms");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÍøÔª¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç½‘å…ƒã€‚
      */
     public static final String I18N_Ne = BaseUtilities.getI18nMessage("Ne");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------EMS¡£
+     * å›½é™…åŒ–ä¿¡æ¯------EMSã€‚
      */
     public static final String I18N_Ems = BaseUtilities.getI18nMessage("Ems");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÍØÆËÁ´½Ó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ‹“æ‰‘é“¾æ¥ã€‚
      */
     public static final String I18N_Link = BaseUtilities.getI18nMessage("Link");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿Í»§¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å®¢æˆ·ã€‚
      */
     public static final String I18N_Customer = BaseUtilities.getI18nMessage("Customer");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒµÎñ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸šåŠ¡ã€‚
      */
     public static final String I18N_Service = BaseUtilities.getI18nMessage("Service");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒµÎñÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸šåŠ¡ç±»å‹ã€‚
      */
     public static final String I18N_ServiceType = BaseUtilities.getI18nMessage("ServiceType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÓÍøÁ¬½Ó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å­ç½‘è¿æ¥ã€‚
      */
     public static final String I18N_SNC = BaseUtilities.getI18nMessage("SNC");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------FDFr¡£
+     * å›½é™…åŒ–ä¿¡æ¯------FDFrã€‚
      */
     public static final String I18N_FDFr = BaseUtilities.getI18nMessage("FDFr");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×îĞ¡Á÷ÓòÆ¬¶Î¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœ€å°æµåŸŸç‰‡æ®µã€‚
      */
     public static final String I18N_MFDFr = BaseUtilities.getI18nMessage("MFDFr");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·½Ïò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ–¹å‘ã€‚
      */
     public static final String I18N_Direction = BaseUtilities.getI18nMessage("Direction");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------NA¡£
+     * å›½é™…åŒ–ä¿¡æ¯------NAã€‚
      */
     public static final String I18N_DirectionNa = BaseUtilities.getI18nMessage("DirectionNa");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ë«Ïò¶Ë¿Ú¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åŒå‘ç«¯å£ã€‚
      */
     public static final String I18N_DirectionBidirectional = BaseUtilities.getI18nMessage("DirectionBidirectional");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ô´¶Ë¿Ú¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æºç«¯å£ã€‚
      */
     public static final String I18N_DirectionSource = BaseUtilities.getI18nMessage("DirectionSource");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËŞ¶Ë¿Ú¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å®¿ç«¯å£ã€‚
      */
     public static final String I18N_DirectionSink = BaseUtilities.getI18nMessage("DirectionSink");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¼¤»î×´Ì¬¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¿€æ´»çŠ¶æ€ã€‚
      */
     public static final String I18N_ActiveState = BaseUtilities.getI18nMessage("ActiveState");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·şÎñ×´Ì¬¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœåŠ¡çŠ¶æ€ã€‚
      */
     public static final String I18N_ServiceState = BaseUtilities.getI18nMessage("ServiceState");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¹Ì¶¨×´Ì¬¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å›ºå®šçŠ¶æ€ã€‚
      */
     public static final String I18N_FixState = BaseUtilities.getI18nMessage("FixState");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç«¯ç‚¹ã€‚
      */
     public static final String I18N_AOrZEnd = BaseUtilities.getI18nMessage("AOrZEnd");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¶Ëµã¼ä¹ØÏµ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç«¯ç‚¹é—´å…³ç³»ã€‚
      */
     public static final String I18N_EndRelation = BaseUtilities.getI18nMessage("EndRelation");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Óë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸ã€‚
      */
     public static final String I18N_And = BaseUtilities.getI18nMessage("And");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»ò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æˆ–ã€‚
      */
     public static final String I18N_Or = BaseUtilities.getI18nMessage("Or");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------½¨Á¢ÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å»ºç«‹ç±»å‹ã€‚
      */
     public static final String I18N_HoldType = BaseUtilities.getI18nMessage("HoldType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ò»ÖÂĞÔ×´Ì¬¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸€è‡´æ€§çŠ¶æ€ã€‚
      */
     public static final String I18N_ConsistentState = BaseUtilities.getI18nMessage("ConsistentState");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------EVCÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------EVCç±»å‹ã€‚
      */
     public static final String I18N_EvcType = BaseUtilities.getI18nMessage("EvcType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·şÎñÖÊÁ¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœåŠ¡è´¨é‡ã€‚
      */
     public static final String I18N_Qos = BaseUtilities.getI18nMessage("Qos");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×Ô¶¨Òå1¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è‡ªå®šä¹‰1ã€‚
      */
     public static final String I18N_SelfDefine1 = BaseUtilities.getI18nMessage("SelfDefine1");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×Ô¶¨Òå2¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è‡ªå®šä¹‰2ã€‚
      */
     public static final String I18N_SelfDefine2 = BaseUtilities.getI18nMessage("SelfDefine2");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×Ô¶¨Òå3¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è‡ªå®šä¹‰3ã€‚
      */
     public static final String I18N_SelfDefine3 = BaseUtilities.getI18nMessage("SelfDefine3");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ê×Ò³¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é¦–é¡µã€‚
      */
     public static final String I18N_First = BaseUtilities.getI18nMessage("First");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÉÏÒ»Ò³¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸Šä¸€é¡µã€‚
      */
     public static final String I18N_Previous = BaseUtilities.getI18nMessage("Previous");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏÂÒ»Ò³¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸‹ä¸€é¡µã€‚
      */
     public static final String I18N_Next = BaseUtilities.getI18nMessage("Next");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ä©Ò³¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœ«é¡µã€‚
      */
     public static final String I18N_Last = BaseUtilities.getI18nMessage("Last");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿Í»§Ãû³Æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å®¢æˆ·åç§°ã€‚
      */
     public static final String I18N_CustomerName = BaseUtilities.getI18nMessage("CustomerName");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿Í»§È«³Æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å®¢æˆ·å…¨ç§°ã€‚
      */
     public static final String I18N_CustomerFullName = BaseUtilities.getI18nMessage("CustomerFullName");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿Í»§µÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å®¢æˆ·ç­‰çº§ã€‚
      */
     public static final String I18N_CustomerLevel = BaseUtilities.getI18nMessage("CustomerLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¸ßµÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é«˜ç­‰çº§ã€‚
      */
     public static final String I18N_HighLevel = BaseUtilities.getI18nMessage("HighLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÖĞµÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸­ç­‰çº§ã€‚
      */
     public static final String I18N_MiddleLevel = BaseUtilities.getI18nMessage("MiddleLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µÍµÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä½ç­‰çº§ã€‚
      */
     public static final String I18N_LowLevel = BaseUtilities.getI18nMessage("LowLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞÅÓÃµÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿¡ç”¨ç­‰çº§ã€‚
      */
     public static final String I18N_CreditLevel = BaseUtilities.getI18nMessage("CreditLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁªÏµÈËĞÕÃû¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è”ç³»äººå§“åã€‚
      */
     public static final String I18N_ContactName = BaseUtilities.getI18nMessage("ContactName");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁªÏµÈËµØÖ·¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è”ç³»äººåœ°å€ã€‚
      */
     public static final String I18N_ContactAddress = BaseUtilities.getI18nMessage("ContactAddress");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×âÓÃÂ·¾¶Ãû³Æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§Ÿç”¨è·¯å¾„åç§°ã€‚
      */
     public static final String I18N_TrailUser = BaseUtilities.getI18nMessage("TrailUser");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×âÓÃÂ·¾¶ÒµÎñÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§Ÿç”¨è·¯å¾„ä¸šåŠ¡ç±»å‹ã€‚
      */
     public static final String I18N_TrafficType = BaseUtilities.getI18nMessage("TrafficType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Â·¾¶×âÓÃÊ±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è·¯å¾„ç§Ÿç”¨æ—¶é—´ã€‚
      */
     public static final String I18N_RentTime = BaseUtilities.getI18nMessage("RentTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´´½¨¿ªÊ¼Ê±¼ä´óÓÚ½áÊøÊ±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ›å»ºå¼€å§‹æ—¶é—´å¤§äºç»“æŸæ—¶é—´ã€‚
      */
     public static final String I18N_CreateFromTimeAfterToTime = BaseUtilities.getI18nMessage("CreateFromTimeAfterToTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Â·¾¶×âÓÃ¿ªÊ¼Ê±¼ä´óÓÚ½áÊøÊ±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è·¯å¾„ç§Ÿç”¨å¼€å§‹æ—¶é—´å¤§äºç»“æŸæ—¶é—´ã€‚
      */
     public static final String I18N_RentFromTimeAfterToTime = BaseUtilities.getI18nMessage("RentFromTimeAfterToTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´Ó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä»ã€‚
      */
     public static final String I18N_From = BaseUtilities.getI18nMessage("From");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µ½¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ°ã€‚
      */
     public static final String I18N_To = BaseUtilities.getI18nMessage("To");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Êı¾İ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ•°æ®ã€‚
      */
     public static final String I18N_Data = BaseUtilities.getI18nMessage("Data");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÓïÒô¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¯­éŸ³ã€‚
      */
     public static final String I18N_Voice = BaseUtilities.getI18nMessage("Voice");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊÓÆµ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è§†é¢‘ã€‚
      */
     public static final String I18N_Video = BaseUtilities.getI18nMessage("Video");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÆ¶¯¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§»åŠ¨ã€‚
      */
     public static final String I18N_Mobile = BaseUtilities.getI18nMessage("Mobile");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Internet¡£
+     * å›½é™…åŒ–ä¿¡æ¯------Internetã€‚
      */
     public static final String I18N_Internet = BaseUtilities.getI18nMessage("Internet");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÃèÊöĞÅÏ¢¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æè¿°ä¿¡æ¯ã€‚
      */
     public static final String I18N_Description = BaseUtilities.getI18nMessage("Description");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊôĞÔ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å±æ€§ã€‚
      */
     public static final String I18N_Attribute = BaseUtilities.getI18nMessage("Attribute");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------A¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------Aç«¯ç‚¹ã€‚
      */
     public static final String I18N_ANode = BaseUtilities.getI18nMessage("ANode");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Z¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------Zç«¯ç‚¹ã€‚
      */
     public static final String I18N_ZNode = BaseUtilities.getI18nMessage("ZNode");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞéÄâÍøÔª¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è™šæ‹Ÿç½‘å…ƒã€‚
      */
     public static final String I18N_VirtualNe = BaseUtilities.getI18nMessage("VirtualNe");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µ¥°å¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å•æ¿ã€‚
      */
     public static final String I18N_Board = BaseUtilities.getI18nMessage("Board");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µ¥°åÀàĞÍ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å•æ¿ç±»å‹ã€‚
      */
     public static final String I18N_BoardType = BaseUtilities.getI18nMessage("BoardType");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¶Ë¿ÚÊı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç«¯å£æ•°ã€‚
      */
     public static final String I18N_PortNumber = BaseUtilities.getI18nMessage("PortNumber");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÖÕ¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç»ˆç«¯ç‚¹ã€‚
      */
     public static final String I18N_Tp = BaseUtilities.getI18nMessage("Tp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÎïÀíÖÕ¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç‰©ç†ç»ˆç«¯ç‚¹ã€‚
      */
     public static final String I18N_Ptp = BaseUtilities.getI18nMessage("Ptp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¸¡¶¯ÖÕ¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æµ®åŠ¨ç»ˆç«¯ç‚¹ã€‚
      */
     public static final String I18N_Ftp = BaseUtilities.getI18nMessage("Ftp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Á÷µã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æµç‚¹ã€‚
      */
     public static final String I18N_Fp = BaseUtilities.getI18nMessage("Fp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Âß¼­ÖÕ¶Ëµã¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€»è¾‘ç»ˆç«¯ç‚¹ã€‚
      */
     public static final String I18N_Ctp = BaseUtilities.getI18nMessage("Ctp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¸ß½×VC¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é«˜é˜¶VCã€‚
      */
     public static final String I18N_HighVc = BaseUtilities.getI18nMessage("HighVc");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µÍ½×VC¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä½é˜¶VCã€‚
      */
     public static final String I18N_LowVc = BaseUtilities.getI18nMessage("LowVc");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Î´Öª¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœªçŸ¥ã€‚
      */
     public static final String I18N_Unknown = BaseUtilities.getI18nMessage("Unknown");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËÙÂÊ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€Ÿç‡ã€‚
      */
     public static final String I18N_Rate = BaseUtilities.getI18nMessage("Rate");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËÙÂÊµÈ¼¶¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€Ÿç‡ç­‰çº§ã€‚
      */
     public static final String I18N_RateLevel = BaseUtilities.getI18nMessage("RateLevel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´´½¨Ê±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ›å»ºæ—¶é—´ã€‚
      */
     public static final String I18N_CreateTime = BaseUtilities.getI18nMessage("CreateTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÊÔ´¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èµ„æºã€‚
      */
     public static final String I18N_Resource = BaseUtilities.getI18nMessage("Resource");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÊÔ´Ê÷¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èµ„æºæ ‘ã€‚
      */
     public static final String I18N_ResourceTree = BaseUtilities.getI18nMessage("ResourceTree");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÊÔ´Ñ¡ÔñÆ÷¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èµ„æºé€‰æ‹©å™¨ã€‚
      */
     public static final String I18N_ResourceSelector = BaseUtilities.getI18nMessage("ResourceSelector");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÊÔ´ID¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èµ„æºIDã€‚
      */
     public static final String I18N_ResourceId = BaseUtilities.getI18nMessage("ResourceId");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×ÊÔ´×ÜÊı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------èµ„æºæ€»æ•°ã€‚
      */
     public static final String I18N_ResourceCount = BaseUtilities.getI18nMessage("ResourceCount");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÑÑ¡ÔñµÄ×ÊÔ´×ÜÊı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·²é€‰æ‹©çš„èµ„æºæ€»æ•°ã€‚
      */
     public static final String I18N_SelectedResourceCount = BaseUtilities.getI18nMessage("SelectedResourceCount");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¹ıÂËÆ÷¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¿‡æ»¤å™¨ã€‚
      */
     public static final String I18N_Filter = BaseUtilities.getI18nMessage("Filter");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¹ıÂË¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¿‡æ»¤ã€‚
      */
     public static final String I18N_Filtrate = BaseUtilities.getI18nMessage("Filtrate");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡Ôñ½á¹û¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©ç»“æœã€‚
      */
     public static final String I18N_SelectedResult = BaseUtilities.getI18nMessage("SelectedResult");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²éÕÒ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æŸ¥æ‰¾ã€‚
      */
     public static final String I18N_Find = BaseUtilities.getI18nMessage("Find");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËÑË÷¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœç´¢ã€‚
      */
     public static final String I18N_Search = BaseUtilities.getI18nMessage("Search");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞÅÏ¢¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿¡æ¯ã€‚
      */
     public static final String I18N_Info = BaseUtilities.getI18nMessage("Info");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·şÎñÆ÷ÕıÔÚ´¦ÀíÖĞ£¬ÇëµÈ´ı¡­¡­¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœåŠ¡å™¨æ­£åœ¨å¤„ç†ä¸­ï¼Œè¯·ç­‰å¾…â€¦â€¦ã€‚
      */
     public static final String I18N_ServerProcessingPleaseWait = BaseUtilities.getI18nMessage("ServerProcessingPleaseWait");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·şÎñÆ÷Êı¾İÒÑ¾­±ä¸ü£¬ÇëË¢ĞÂ£¡¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœåŠ¡å™¨æ•°æ®å·²ç»å˜æ›´ï¼Œè¯·åˆ·æ–°ï¼ã€‚
      */
     public static final String I18N_ServerDataChangedPleaseRefresh = BaseUtilities.getI18nMessage("ServerDataChangedPleaseRefresh");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ËÑË÷µÄÎÄ±¾²»ÔÊĞíÎª¿Õ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœç´¢çš„æ–‡æœ¬ä¸å…è®¸ä¸ºç©ºã€‚
      */
     public static final String I18N_SearchTextIsNull = BaseUtilities.getI18nMessage("SearchTextIsNull");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ã»ÓĞ±»ÕÒµ½¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ²¡æœ‰è¢«æ‰¾åˆ°ã€‚
      */
     public static final String I18N_IsNotFound = BaseUtilities.getI18nMessage("IsNotFound");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡Ôñ×ÊÔ´¸öÊı±ØĞë´óÓÚ»òµÈÓÚ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©èµ„æºä¸ªæ•°å¿…é¡»å¤§äºæˆ–ç­‰äºã€‚
      */
     public static final String I18N_CountMustMoreThanOrEqual = BaseUtilities.getI18nMessage("CountMustMoreThanOrEqual");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡Ôñ×ÊÔ´¸öÊı±ØĞëĞ¡ÓÚ»òµÈÓÚ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©èµ„æºä¸ªæ•°å¿…é¡»å°äºæˆ–ç­‰äºã€‚
      */
     public static final String I18N_CountMustLessThanOrEqual = BaseUtilities.getI18nMessage("CountMustLessThanOrEqual");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÎŞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ— ã€‚
      */
     public static final String I18N_INFO_NONE = BaseUtilities.getI18nMessage("none");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È«²¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å…¨éƒ¨ã€‚
      */
     public static final String I18N_INFO_ALL = BaseUtilities.getI18nMessage("all");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------³É¹¦¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æˆåŠŸã€‚
      */
     public static final String I18N_INFO_SUCCESS = BaseUtilities.getI18nMessage("success");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ê§°Ü¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¤±è´¥ã€‚
      */
     public static final String I18N_INFO_FAIL = BaseUtilities.getI18nMessage("fail");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ê§°ÜÔ­Òò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¤±è´¥åŸå› ã€‚
      */
     public static final String I18N_INFO_FAILREASON = BaseUtilities.getI18nMessage("failReason");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿ªÊ¼¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¼€å§‹ã€‚
      */
     public static final String I18N_INFO_START = BaseUtilities.getI18nMessage("start");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿ªÊ¼Ê±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¼€å§‹æ—¶é—´ã€‚
      */
     public static final String I18N_INFO_STARTTIME = BaseUtilities.getI18nMessage("startTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------½áÊø¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç»“æŸã€‚
      */
     public static final String I18N_INFO_END = BaseUtilities.getI18nMessage("end");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------½áÊøÊ±¼ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç»“æŸæ—¶é—´ã€‚
      */
     public static final String I18N_INFO_ENDTIME = BaseUtilities.getI18nMessage("endTime");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÖĞ¶Ï¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸­æ–­ã€‚
      */
     public static final String I18N_INFO_INTERRUPT = BaseUtilities.getI18nMessage("interrupt");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´íÎó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é”™è¯¯ã€‚
      */
     public static final String I18N_INFO_ERROR = BaseUtilities.getI18nMessage("error");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¿Õ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç©ºã€‚
      */
     public static final String I18N_INFO_EMPTY = BaseUtilities.getI18nMessage("empty");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------(¿Õ)¡£
+     * å›½é™…åŒ–ä¿¡æ¯------(ç©º)ã€‚
      */
     public static final String I18N_INFO_EMPTYITEM = "(" + I18N_INFO_EMPTY + ")";
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊÇ²»´æÔÚµÄ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ˜¯ä¸å­˜åœ¨çš„ã€‚
      */
     public static final String I18N_INFO_ISINEXISTENT = BaseUtilities.getI18nMessage("isInexistent");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊÇ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ˜¯ã€‚
      */
     public static final String I18N_INFO_YES = BaseUtilities.getI18nMessage("yes");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------·ñ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¦ã€‚
      */
     public static final String I18N_INFO_NO = BaseUtilities.getI18nMessage("no");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÊäÈë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å…¥ã€‚
      */
     public static final String I18N_INFO_INPUT = BaseUtilities.getI18nMessage("input");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Êä³ö¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¾“å‡ºã€‚
      */
     public static final String I18N_INFO_OUTPUT = BaseUtilities.getI18nMessage("output");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µ¼Èë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¯¼å…¥ã€‚
      */
     public static final String I18N_INFO_IMPORT = BaseUtilities.getI18nMessage("import");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------µ¼³ö¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¯¼å‡ºã€‚
      */
     public static final String I18N_INFO_EXPORT = BaseUtilities.getI18nMessage("export");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------½á¹û¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç»“æœã€‚
      */
     public static final String I18N_INFO_RESULT = BaseUtilities.getI18nMessage("result");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È·¶¨¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç¡®å®šã€‚
      */
     public static final String I18N_INFO_OK = BaseUtilities.getI18nMessage("ok");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ó¦ÓÃ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åº”ç”¨ã€‚
      */
     public static final String I18N_INFO_APPLY = BaseUtilities.getI18nMessage("apply");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÉèÖÃ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è®¾ç½®ã€‚
      */
     public static final String I18N_INFO_SET = BaseUtilities.getI18nMessage("set");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------È¡Ïû¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å–æ¶ˆã€‚
      */
     public static final String I18N_INFO_CANCEL = BaseUtilities.getI18nMessage("cancel");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------´ò¿ª¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ‰“å¼€ã€‚
      */
     public static final String I18N_INFO_OPEN = BaseUtilities.getI18nMessage("open");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¹Ø±Õ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å…³é—­ã€‚
      */
     public static final String I18N_INFO_CLOSE = BaseUtilities.getI18nMessage("close");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------±£´æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿å­˜ã€‚
      */
     public static final String I18N_INFO_SAVE = BaseUtilities.getI18nMessage("save");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Áí´æÎª¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¦å­˜ä¸ºã€‚
      */
     public static final String I18N_INFO_SAVEAS = BaseUtilities.getI18nMessage("saveAs");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÔØÈë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è½½å…¥ã€‚
      */
     public static final String I18N_INFO_LOAD = BaseUtilities.getI18nMessage("load");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»Ö¸´¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¢å¤ã€‚
      */
     public static final String I18N_INFO_RESTORE = BaseUtilities.getI18nMessage("restore");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------»Ö¸´È±Ê¡Öµ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ¢å¤ç¼ºçœå€¼ã€‚
      */
     public static final String I18N_INFO_RESTOREDEFAULTS = BaseUtilities.getI18nMessage("restoreDefaults");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ìí¼Ó¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ·»åŠ ã€‚
      */
     public static final String I18N_INFO_ADD = BaseUtilities.getI18nMessage("add");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ìí¼Óµ½¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ·»åŠ åˆ°ã€‚
      */
     public static final String I18N_INFO_ADDTO = BaseUtilities.getI18nMessage("addTo");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÑ²åÈë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·²æ’å…¥ã€‚
      */
     public static final String I18N_INFO_INSERTED = BaseUtilities.getI18nMessage("inserted");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÆ³ı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§»é™¤ã€‚
      */
     public static final String I18N_INFO_REMOVE = BaseUtilities.getI18nMessage("remove");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÑÒÆ³ı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·²ç§»é™¤ã€‚
      */
     public static final String I18N_INFO_REMOVED = BaseUtilities.getI18nMessage("removed");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------É¾³ı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ é™¤ã€‚
      */
     public static final String I18N_INFO_DELETE = BaseUtilities.getI18nMessage("delete");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÄãÈ·¶¨É¾³ıÂğ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä½ ç¡®å®šåˆ é™¤å—ã€‚
      */
     public static final String I18N_INFO_AREYOUSUREDELETE = BaseUtilities.getI18nMessage("areYouSureDelete");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞŞ¸Ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¿®æ”¹ã€‚
      */
     public static final String I18N_INFO_MODIFY = BaseUtilities.getI18nMessage("modify");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÑ¸Ä±ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·²æ”¹å˜ã€‚
      */
     public static final String I18N_INFO_CHANGED = BaseUtilities.getI18nMessage("changed");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Î´¸Ä±ä¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æœªæ”¹å˜ã€‚
      */
     public static final String I18N_INFO_UNCHANGED = BaseUtilities.getI18nMessage("unchanged");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÖØÃüÃû¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é‡å‘½åã€‚
      */
     public static final String I18N_INFO_RENAME = BaseUtilities.getI18nMessage("rename");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²éÑ¯¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æŸ¥è¯¢ã€‚
      */
     public static final String I18N_INFO_QUERY = BaseUtilities.getI18nMessage("query");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²éÑ¯Ìõ¼ş¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æŸ¥è¯¢æ¡ä»¶ã€‚
      */
     public static final String I18N_INFO_QUERYCONDITION = BaseUtilities.getI18nMessage("queryCondition");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²éÑ¯½á¹û¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æŸ¥è¯¢ç»“æœã€‚
      */
     public static final String I18N_INFO_QUERYRESULT = BaseUtilities.getI18nMessage("queryResult");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¡Œã€‚
      */
     public static final String I18N_INFO_ROW = BaseUtilities.getI18nMessage("row");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÁĞ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ—ã€‚
      */
     public static final String I18N_INFO_COLUMN = BaseUtilities.getI18nMessage("column");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¸üĞÂ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ›´æ–°ã€‚
      */
     public static final String I18N_INFO_UPDATE = BaseUtilities.getI18nMessage("update");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ë¢ĞÂ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åˆ·æ–°ã€‚
      */
     public static final String I18N_INFO_REFRESH = BaseUtilities.getI18nMessage("refresh");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÉÏÒÆ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸Šç§»ã€‚
      */
     public static final String I18N_INFO_MOVETOUP = BaseUtilities.getI18nMessage("moveToUp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÉÏÒÆÈ«²¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸Šç§»å…¨éƒ¨ã€‚
      */
     public static final String I18N_INFO_MOVEALLTOUP = BaseUtilities.getI18nMessage("moveAllToUp");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏÂÒÆ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸‹ç§»ã€‚
      */
     public static final String I18N_INFO_MOVETODOWN = BaseUtilities.getI18nMessage("moveToDown");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏÂÒÆÈ«²¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ä¸‹ç§»å…¨éƒ¨ã€‚
      */
     public static final String I18N_INFO_MOVEALLTODOWN = BaseUtilities.getI18nMessage("moveAllToDown");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×óÒÆ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·¦ç§»ã€‚
      */
     public static final String I18N_INFO_MOVETOLEFT = BaseUtilities.getI18nMessage("moveToLeft");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------×óÒÆÈ«²¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å·¦ç§»å…¨éƒ¨ã€‚
      */
     public static final String I18N_INFO_MOVEALLTOLEFT = BaseUtilities.getI18nMessage("moveAllToLeft");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÓÒÒÆ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å³ç§»ã€‚
      */
     public static final String I18N_INFO_MOVETORIGHT = BaseUtilities.getI18nMessage("moveToRight");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÓÒÒÆÈ«²¿¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å³ç§»å…¨éƒ¨ã€‚
      */
     public static final String I18N_INFO_MOVEALLTORIGHT = BaseUtilities.getI18nMessage("moveAllToRight");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------IPµØÖ·¡£
+     * å›½é™…åŒ–ä¿¡æ¯------IPåœ°å€ã€‚
      */
     public static final String I18N_INFO_IP = BaseUtilities.getI18nMessage("ip");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¶Ë¿ÚºÅ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç«¯å£å·ã€‚
      */
     public static final String I18N_INFO_PORT = BaseUtilities.getI18nMessage("port");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÓÃ»§Ãû¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç”¨æˆ·åã€‚
      */
     public static final String I18N_INFO_USERNAME = BaseUtilities.getI18nMessage("username");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÃÜÂë¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å¯†ç ã€‚
      */
     public static final String I18N_INFO_PASSWORD = BaseUtilities.getI18nMessage("password");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÎÄ¼ş¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ–‡ä»¶ã€‚
      */
     public static final String I18N_INFO_FILE = BaseUtilities.getI18nMessage("file");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ä¿Â¼¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç›®å½•ã€‚
      */
     public static final String I18N_INFO_DIRECTORY = BaseUtilities.getI18nMessage("directory");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÎÄ¼ş¼Ğ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ–‡ä»¶å¤¹ã€‚
      */
     public static final String I18N_INFO_FOLDER = BaseUtilities.getI18nMessage("folder");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ĞÂ½¨ÎÄ¼ş¼Ğ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ–°å»ºæ–‡ä»¶å¤¹ã€‚
      */
     public static final String I18N_INFO_NEWFOLDER = BaseUtilities.getI18nMessage("newFolder");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÒÆÖÁÎÄ¼ş¼Ğ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç§»è‡³æ–‡ä»¶å¤¹ã€‚
      */
     public static final String I18N_INFO_MOVETOFOLDER = BaseUtilities.getI18nMessage("moveToFolder");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ñ¡Ôñ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é€‰æ‹©ã€‚
      */
     public static final String I18N_INFO_SELECT = BaseUtilities.getI18nMessage("select");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÅÅĞò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’åºã€‚
      */
     public static final String I18N_INFO_SORT = BaseUtilities.getI18nMessage("sort");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÉıĞò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------å‡åºã€‚
      */
     public static final String I18N_INFO_ASCENDING = BaseUtilities.getI18nMessage("ascending");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------½µĞò¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é™åºã€‚
      */
     public static final String I18N_INFO_DESCENDING = BaseUtilities.getI18nMessage("descending");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ë÷Òı¡£
+     * å›½é™…åŒ–ä¿¡æ¯------ç´¢å¼•ã€‚
      */
     public static final String I18N_INFO_INDEX = BaseUtilities.getI18nMessage("index");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ãû³Æ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åç§°ã€‚
      */
     public static final String I18N_INFO_NAME = BaseUtilities.getI18nMessage("name");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------¸ñÊ½¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ ¼å¼ã€‚
      */
     public static final String I18N_INFO_FORMAT = BaseUtilities.getI18nMessage("format");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Ô¤ÀÀ¡£
+     * å›½é™…åŒ–ä¿¡æ¯------é¢„è§ˆã€‚
      */
     public static final String I18N_INFO_PREVIEW = BaseUtilities.getI18nMessage("preview");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------²¥·Å¡£
+     * å›½é™…åŒ–ä¿¡æ¯------æ’­æ”¾ã€‚
      */
     public static final String I18N_INFO_PLAY = BaseUtilities.getI18nMessage("play");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------Í£Ö¹¡£
+     * å›½é™…åŒ–ä¿¡æ¯------åœæ­¢ã€‚
      */
     public static final String I18N_INFO_STOP = BaseUtilities.getI18nMessage("stop");
 
     /**
-     * ¹ú¼Ê»¯ĞÅÏ¢------ÏêÏ¸¡£
+     * å›½é™…åŒ–ä¿¡æ¯------è¯¦ç»†ã€‚
      */
     public static final String I18N_INFO_DETAIL = BaseUtilities.getI18nMessage("detail");
 
     /**
-     * Í¼±ê------²éÕÒ¡£
+     * å›¾æ ‡------æŸ¥æ‰¾ã€‚
      */
     public static final Icon ICON_Find = BaseUtilities.getIcon("find.gif");
 
     /**
-     * Í¼±ê------´ò¿ª¡£
+     * å›¾æ ‡------æ‰“å¼€ã€‚
      */
     public static final Icon ICON_Open = BaseUtilities.getIcon("open.gif");
 
     /**
-     * Í¼±ê------¹Ø±Õ¡£
+     * å›¾æ ‡------å…³é—­ã€‚
      */
     public static final Icon ICON_Close = BaseUtilities.getIcon("close.gif");
 
     /**
-     * Í¼±ê------¹Ø±Õ£¨°´ÏÂ£©¡£
+     * å›¾æ ‡------å…³é—­ï¼ˆæŒ‰ä¸‹ï¼‰ã€‚
      */
     public static final Icon ICON_ClosePressed = BaseUtilities.getIcon("close-pressed.gif");
 
     /**
-     * Í¼±ê------¹Ø±Õ£¨¾­¹ı£©¡£
+     * å›¾æ ‡------å…³é—­ï¼ˆç»è¿‡ï¼‰ã€‚
      */
     public static final Icon ICON_CloseRollover = BaseUtilities.getIcon("close-rollover.gif");
 
     /**
-     * Í¼±ê------¹Ø±Õ£¨·ÇÊ¹ÄÜ£©¡£
+     * å›¾æ ‡------å…³é—­ï¼ˆéä½¿èƒ½ï¼‰ã€‚
      */
     public static final Icon ICON_CloseDisabled = BaseUtilities.getIcon("close-disabled.gif");
 
     /**
-     * Í¼±ê------Ê×Ò³¡£
+     * å›¾æ ‡------é¦–é¡µã€‚
      */
     public static final Icon ICON_First = BaseUtilities.getIcon("first.gif");
 
     /**
-     * Í¼±ê------Ê×Ò³£¨°´ÏÂ£©¡£
+     * å›¾æ ‡------é¦–é¡µï¼ˆæŒ‰ä¸‹ï¼‰ã€‚
      */
     public static final Icon ICON_FirstPressed = BaseUtilities.getIcon("first-pressed.gif");
 
     /**
-     * Í¼±ê------Ê×Ò³£¨¾­¹ı£©¡£
+     * å›¾æ ‡------é¦–é¡µï¼ˆç»è¿‡ï¼‰ã€‚
      */
     public static final Icon ICON_FirstRollover = BaseUtilities.getIcon("first-rollover.gif");
 
     /**
-     * Í¼±ê------Ê×Ò³£¨·ÇÊ¹ÄÜ£©¡£
+     * å›¾æ ‡------é¦–é¡µï¼ˆéä½¿èƒ½ï¼‰ã€‚
      */
     public static final Icon ICON_FirstDisabled = BaseUtilities.getIcon("first-disabled.gif");
 
     /**
-     * Í¼±ê------ÉÏÒ»Ò³¡£
+     * å›¾æ ‡------ä¸Šä¸€é¡µã€‚
      */
     public static final Icon ICON_Previous = BaseUtilities.getIcon("previous.gif");
 
     /**
-     * Í¼±ê------ÉÏÒ»Ò³£¨°´ÏÂ£©¡£
+     * å›¾æ ‡------ä¸Šä¸€é¡µï¼ˆæŒ‰ä¸‹ï¼‰ã€‚
      */
     public static final Icon ICON_PreviousPressed = BaseUtilities.getIcon("previous-pressed.gif");
 
     /**
-     * Í¼±ê------ÉÏÒ»Ò³£¨¾­¹ı£©¡£
+     * å›¾æ ‡------ä¸Šä¸€é¡µï¼ˆç»è¿‡ï¼‰ã€‚
      */
     public static final Icon ICON_PreviousRollover = BaseUtilities.getIcon("previous-rollover.gif");
 
     /**
-     * Í¼±ê------ÉÏÒ»Ò³£¨·ÇÊ¹ÄÜ£©¡£
+     * å›¾æ ‡------ä¸Šä¸€é¡µï¼ˆéä½¿èƒ½ï¼‰ã€‚
      */
     public static final Icon ICON_PreviousDisabled = BaseUtilities.getIcon("previous-disabled.gif");
 
     /**
-     * Í¼±ê------ÏÂÒ»Ò³¡£
+     * å›¾æ ‡------ä¸‹ä¸€é¡µã€‚
      */
     public static final Icon ICON_Next = BaseUtilities.getIcon("next.gif");
 
     /**
-     * Í¼±ê------ÏÂÒ»Ò³£¨°´ÏÂ£©¡£
+     * å›¾æ ‡------ä¸‹ä¸€é¡µï¼ˆæŒ‰ä¸‹ï¼‰ã€‚
      */
     public static final Icon ICON_NextPressed = BaseUtilities.getIcon("next-pressed.gif");
 
     /**
-     * Í¼±ê------ÏÂÒ»Ò³£¨¾­¹ı£©¡£
+     * å›¾æ ‡------ä¸‹ä¸€é¡µï¼ˆç»è¿‡ï¼‰ã€‚
      */
     public static final Icon ICON_NextRollover = BaseUtilities.getIcon("next-rollover.gif");
 
     /**
-     * Í¼±ê------ÏÂÒ»Ò³£¨·ÇÊ¹ÄÜ£©¡£
+     * å›¾æ ‡------ä¸‹ä¸€é¡µï¼ˆéä½¿èƒ½ï¼‰ã€‚
      */
     public static final Icon ICON_NextDisabled = BaseUtilities.getIcon("next-disabled.gif");
 
     /**
-     * Í¼±ê------Ä©Ò³¡£
+     * å›¾æ ‡------æœ«é¡µã€‚
      */
     public static final Icon ICON_Last = BaseUtilities.getIcon("last.gif");
 
     /**
-     * Í¼±ê------Ä©Ò³£¨°´ÏÂ£©¡£
+     * å›¾æ ‡------æœ«é¡µï¼ˆæŒ‰ä¸‹ï¼‰ã€‚
      */
     public static final Icon ICON_LastPressed = BaseUtilities.getIcon("last-pressed.gif");
 
     /**
-     * Í¼±ê------Ä©Ò³£¨¾­¹ı£©¡£
+     * å›¾æ ‡------æœ«é¡µï¼ˆç»è¿‡ï¼‰ã€‚
      */
     public static final Icon ICON_LastRollover = BaseUtilities.getIcon("last-rollover.gif");
 
     /**
-     * Í¼±ê------Ä©Ò³£¨·ÇÊ¹ÄÜ£©¡£
+     * å›¾æ ‡------æœ«é¡µï¼ˆéä½¿èƒ½ï¼‰ã€‚
      */
     public static final Icon ICON_LastDisabled = BaseUtilities.getIcon("last-disabled.gif");
 
     /**
-     * Í¼±ê------Ë¢ĞÂ¡£
+     * å›¾æ ‡------åˆ·æ–°ã€‚
      */
     public static final Icon ICON_REFRESH = BaseUtilities.getIcon("refresh.gif");
 
     /**
-     * Í¼±ê------µÈ´ı¡£
+     * å›¾æ ‡------ç­‰å¾…ã€‚
      */
     public static final Icon ICON_WAITING = BaseUtilities.getIcon("waiting.gif");
 
     /**
-     * Í¼±ê------É¾³ı¡£
+     * å›¾æ ‡------åˆ é™¤ã€‚
      */
     public static final Icon ICON_DELETE = BaseUtilities.getIcon("delete.gif");
 
     /**
-     * Í¼±ê------ĞÅÏ¢¡£
+     * å›¾æ ‡------ä¿¡æ¯ã€‚
      */
     public static final Icon ICON_INFO = BaseUtilities.getIcon("info.gif");
 
     /**
-     * Í¼±ê------¾¯¸æ¡£
+     * å›¾æ ‡------è­¦å‘Šã€‚
      */
     public static final Icon ICON_WARNING = BaseUtilities.getIcon("warning.gif");
 
     /**
-     * Í¼±ê------´íÎó¡£
+     * å›¾æ ‡------é”™è¯¯ã€‚
      */
     public static final Icon ICON_ERROR = BaseUtilities.getIcon("error.gif");
 
     /**
-     * Í¼±ê------³É¹¦¡£
+     * å›¾æ ‡------æˆåŠŸã€‚
      */
     public static final Icon ICON_SUCCESSFUL = BaseUtilities.getIcon("successful.gif");
 
     /**
-     * Í¼±ê------Ê§°Ü¡£
+     * å›¾æ ‡------å¤±è´¥ã€‚
      */
     public static final Icon ICON_FAILED = BaseUtilities.getIcon("failed.gif");
 
     /**
-     * Í¼±ê------ĞÂ½¨ÎÄ¼ş¼Ğ¡£
+     * å›¾æ ‡------æ–°å»ºæ–‡ä»¶å¤¹ã€‚
      */
     public static final Icon ICON_NEWFOLDER = BaseUtilities.getIcon("new-folder.gif");
 
     /**
-     * Í¼±ê------µ¼Èë¡£
+     * å›¾æ ‡------å¯¼å…¥ã€‚
      */
     public static final Icon ICON_IMPORT = BaseUtilities.getIcon("import.gif");
 
     /**
-     * Í¼±ê------µ¼³ö¡£
+     * å›¾æ ‡------å¯¼å‡ºã€‚
      */
     public static final Icon ICON_EXPORT = BaseUtilities.getIcon("export.gif");
 
     /**
-     * Í¼±ê------ÏòÉÏ¡£
+     * å›¾æ ‡------å‘ä¸Šã€‚
      */
     public static final Icon ICON_UP = BaseUtilities.getIcon("up.gif");
 
     /**
-     * Í¼±ê------ÏòÏÂ¡£
+     * å›¾æ ‡------å‘ä¸‹ã€‚
      */
     public static final Icon ICON_DOWN = BaseUtilities.getIcon("down.gif");
 
     /**
-     * Í¼±ê------ÉÏÒÆ¡£
+     * å›¾æ ‡------ä¸Šç§»ã€‚
      */
     public static final Icon ICON_MOVETOUP = BaseUtilities.getIcon("move-to-up.gif");
 
     /**
-     * Í¼±ê------ÉÏÒÆÈ«²¿¡£
+     * å›¾æ ‡------ä¸Šç§»å…¨éƒ¨ã€‚
      */
     public static final Icon ICON_MOVEALLTOUP = BaseUtilities.getIcon("move-all-to-up.gif");
 
     /**
-     * Í¼±ê------ÏÂÒÆ¡£
+     * å›¾æ ‡------ä¸‹ç§»ã€‚
      */
     public static final Icon ICON_MOVETODOWN = BaseUtilities.getIcon("move-to-down.gif");
 
     /**
-     * Í¼±ê------ÏÂÒÆÈ«²¿¡£
+     * å›¾æ ‡------ä¸‹ç§»å…¨éƒ¨ã€‚
      */
     public static final Icon ICON_MOVEALLTODOWN = BaseUtilities.getIcon("move-all-to-down.gif");
 
     /**
-     * Í¼±ê------×óÒÆ¡£
+     * å›¾æ ‡------å·¦ç§»ã€‚
      */
     public static final Icon ICON_MOVETOLEFT = BaseUtilities.getIcon("move-to-left.gif");
 
     /**
-     * Í¼±ê------×óÒÆÈ«²¿¡£
+     * å›¾æ ‡------å·¦ç§»å…¨éƒ¨ã€‚
      */
     public static final Icon ICON_MOVEALLTOLEFT = BaseUtilities.getIcon("move-all-to-left.gif");
 
     /**
-     * Í¼±ê------ÓÒÒÆ¡£
+     * å›¾æ ‡------å³ç§»ã€‚
      */
     public static final Icon ICON_MOVETORIGHT = BaseUtilities.getIcon("move-to-right.gif");
 
     /**
-     * Í¼±ê------ÓÒÒÆÈ«²¿¡£
+     * å›¾æ ‡------å³ç§»å…¨éƒ¨ã€‚
      */
     public static final Icon ICON_MOVEALLTORIGHT = BaseUtilities.getIcon("move-all-to-right.gif");
 
     /**
-     * ×é¼ş¼àÌıÆ÷------³ß´çÏŞÖÆÆ÷£¬ÓÃÓÚFrame»òDialogµÈÖØÁ¿¼¶×é¼ş£¬×¢Òâ£ºÓÃÓÚÆÕÍ¨µÄÇáÁ¿¼¶×é¼şÒâÒå²»´ó£¬¶øÇÒÓĞ¿ÉÄÜ»á´øÀ´Ò»¶¨ÎÊÌâ¡£
-     * @deprecated ´Ë¼àÌıÆ÷¹²ÏíÓÚËùÓĞ¶Ô»°¿ò×é¼şÊÇÓĞÎÊÌâµÄ£¬ÇëÌæ»»ÎªBaseUtilities.createSizeLimiter()´´½¨¶ÀÁ¢µÄ³ß´çÏŞÖÆÆ÷¡£
+     * ç»„ä»¶ç›‘å¬å™¨------å°ºå¯¸é™åˆ¶å™¨ï¼Œç”¨äºFrameæˆ–Dialogç­‰é‡é‡çº§ç»„ä»¶ï¼Œæ³¨æ„ï¼šç”¨äºæ™®é€šçš„è½»é‡çº§ç»„ä»¶æ„ä¹‰ä¸å¤§ï¼Œè€Œä¸”æœ‰å¯èƒ½ä¼šå¸¦æ¥ä¸€å®šé—®é¢˜ã€‚
+     * @deprecated æ­¤ç›‘å¬å™¨å…±äº«äºæ‰€æœ‰å¯¹è¯æ¡†ç»„ä»¶æ˜¯æœ‰é—®é¢˜çš„ï¼Œè¯·æ›¿æ¢ä¸ºBaseUtilities.createSizeLimiter()åˆ›å»ºç‹¬ç«‹çš„å°ºå¯¸é™åˆ¶å™¨ã€‚
      * @see BaseUtilities#createSizeLimiter()
      */
     public static final ComponentListener CL_SIZELIMITER = new ComponentAdapter() {
 
         /**
-         * ¾ÉµÄ±ß½ç¡£
+         * æ—§çš„è¾¹ç•Œã€‚
          */
         protected Rectangle m_oldBounds;
 
@@ -1409,15 +1409,15 @@ public interface IBaseConstants {
          * @see java.awt.event.ComponentAdapter#componentResized(java.awt.event.ComponentEvent)
          */
         public void componentResized(ComponentEvent evt) {
-            /* »ñÈ¡Ä¿±ê×é¼ş */
+            /* è·å–ç›®æ ‡ç»„ä»¶ */
             Component component = evt.getComponent();
 
-            /* »ñÈ¡Ä¿±ê×é¼şÉèÖÃµÄ±ß½çºÍ×îĞ¡×î´ó³ß´ç */
+            /* è·å–ç›®æ ‡ç»„ä»¶è®¾ç½®çš„è¾¹ç•Œå’Œæœ€å°æœ€å¤§å°ºå¯¸ */
             Rectangle bounds = component.getBounds();
             Dimension minSize = component.getMinimumSize();
             Dimension maxSize = component.getMaximumSize();
 
-            /* È·¶¨Ä¿±ê×é¼şĞÂµÄxÖá×ø±ê¼°¿í¶È */
+            /* ç¡®å®šç›®æ ‡ç»„ä»¶æ–°çš„xè½´åæ ‡åŠå®½åº¦ */
             if (bounds.width < minSize.width) {
                 bounds.x -= (bounds.x == m_oldBounds.x ? 0 : minSize.width - bounds.width);
                 bounds.width = minSize.width;
@@ -1427,7 +1427,7 @@ public interface IBaseConstants {
                 bounds.width = maxSize.width;
             }
 
-            /* È·¶¨Ä¿±ê×é¼şĞÂµÄyÖá×ø±ê¼°¸ß¶È */
+            /* ç¡®å®šç›®æ ‡ç»„ä»¶æ–°çš„yè½´åæ ‡åŠé«˜åº¦ */
             if (bounds.height < minSize.height) {
                 bounds.y -= (bounds.y == m_oldBounds.y ? 0 : minSize.height - bounds.height);
                 bounds.height = minSize.height;
@@ -1437,10 +1437,10 @@ public interface IBaseConstants {
                 bounds.height = maxSize.height;
             }
 
-            /* ÉèÖÃÄ¿±ê×é¼şµÄĞÂ±ß½ç */
+            /* è®¾ç½®ç›®æ ‡ç»„ä»¶çš„æ–°è¾¹ç•Œ */
             component.setBounds(bounds);
 
-            /* ±£´æĞÂµÄ±ß½ç */
+            /* ä¿å­˜æ–°çš„è¾¹ç•Œ */
             m_oldBounds = bounds;
         }
 

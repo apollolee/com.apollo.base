@@ -1,5 +1,5 @@
 /*
- * ´Ë´úÂë´´½¨ÓÚ 2008-1-29 ÉÏÎç09:59:07¡£
+ * æ­¤ä»£ç åˆ›å»ºäº 2008-1-29 ä¸Šåˆ09:59:07ã€‚
  */
 package com.apollo.base.util;
 
@@ -64,22 +64,22 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.TreePath;
 
 /**
- * <p>ÎÄ¼şÃû³Æ£ºBaseUtilities.java</p>
- * <p>ÀàĞÍÃèÊö£º»ù´¡¹¤¾ßÀà¡£</p>
- * <p>°æÈ¨ËùÓĞ£º°æÈ¨ËùÓĞ(C)2001-2004¡£</p>
- * <p>¹«¡¡¡¡Ë¾£º²¤ÂÜÀæ¡£</p>
- * <p>ÄÚÈİÕªÒª£º</p>
- * <p>ÆäËûËµÃ÷£º</p>
- * <p>Íê³ÉÈÕÆÚ£º2008-1-29</p>
- * <p>ĞŞ¸Ä¼ÇÂ¼£º</p>
+ * <p>æ–‡ä»¶åç§°ï¼šBaseUtilities.java</p>
+ * <p>ç±»å‹æè¿°ï¼šåŸºç¡€å·¥å…·ç±»ã€‚</p>
+ * <p>ç‰ˆæƒæ‰€æœ‰ï¼šç‰ˆæƒæ‰€æœ‰(C)2001-2004ã€‚</p>
+ * <p>å…¬ã€€ã€€å¸ï¼šè èæ¢¨ã€‚</p>
+ * <p>å†…å®¹æ‘˜è¦ï¼š</p>
+ * <p>å…¶ä»–è¯´æ˜ï¼š</p>
+ * <p>å®Œæˆæ—¥æœŸï¼š2008-1-29</p>
+ * <p>ä¿®æ”¹è®°å½•ï¼š</p>
  * <pre>
- *    ĞŞ¸ÄÈÕÆÚ£º
- *    °æ ±¾ ºÅ£º
- *    ĞŞ ¸Ä ÈË£º
- *    ĞŞ¸ÄÄÚÈİ£º
+ *    ä¿®æ”¹æ—¥æœŸï¼š
+ *    ç‰ˆ æœ¬ å·ï¼š
+ *    ä¿® æ”¹ äººï¼š
+ *    ä¿®æ”¹å†…å®¹ï¼š
  * </pre>
  * @version 1.0
- * @author ÀîÕò
+ * @author æé•‡
  */
 @SuppressWarnings("all")
 public class BaseUtilities implements IBaseConstants {
@@ -87,30 +87,30 @@ public class BaseUtilities implements IBaseConstants {
     /*------------------------------------- Public (Static) Inner Class -------------------------------------*/
 
     /**
-     * ÈÕÆÚ°ü×°Àà¡£
+     * æ—¥æœŸåŒ…è£…ç±»ã€‚
      */
     public static class DateWrapper implements Comparable {
 
         /**
-         * ÈÕÆÚ¡£
+         * æ—¥æœŸã€‚
          */
         protected Date m_date;
 
         /**
-         * ÃèÊö¡£
+         * æè¿°ã€‚
          */
         protected String m_description;
 
         /**
-         * ¹¹Ôì·½·¨¡£
+         * æ„é€ æ–¹æ³•ã€‚
          */
         public DateWrapper() {
             this(null);
         }
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param date ÈÕÆÚ¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param date æ—¥æœŸã€‚
          */
         public DateWrapper(Date date) {
             m_date = date == null ? new Date() : date;
@@ -134,37 +134,37 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¹¤×÷ÕßÊÓÍ¼¡£
+     * å·¥ä½œè€…è§†å›¾ã€‚
      */
     public static class WorkerView extends JPanel {
 
         /**
-         * ¹¤×÷ÕßÊÓÍ¼¡£
+         * å·¥ä½œè€…è§†å›¾ã€‚
          */
         private JComponent m_workerView;
 
         /**
-         * µÈ´ıÊÓÍ¼¡£
+         * ç­‰å¾…è§†å›¾ã€‚
          */
         private JPanel m_waitingView;
 
         /**
-         * µ±Ç°ÊÓÍ¼¡£
+         * å½“å‰è§†å›¾ã€‚
          */
         private JComponent m_current;
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param waitingText µÈ´ıÖĞÎÄ±¾¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param waitingText ç­‰å¾…ä¸­æ–‡æœ¬ã€‚
          */
         public WorkerView(String waitingText) {
             this(null, waitingText);
         }
 
         /**
-         * ¹¹Ôì·½·¨¡£
-         * @param workerView ¹¤×÷ÕßÊÓÍ¼¡£
-         * @param waitingText µÈ´ıÖĞÎÄ±¾¡£
+         * æ„é€ æ–¹æ³•ã€‚
+         * @param workerView å·¥ä½œè€…è§†å›¾ã€‚
+         * @param waitingText ç­‰å¾…ä¸­æ–‡æœ¬ã€‚
          */
         public WorkerView(JComponent workerView, String waitingText) {
             super(new GridBagLayout());
@@ -177,8 +177,8 @@ public class BaseUtilities implements IBaseConstants {
         }
 
         /**
-         * ÉèÖÃ¹¤×÷ÕßÊÓÍ¼¡£
-         * @param workerView ¹¤×÷ÕßÊÓÍ¼¡£
+         * è®¾ç½®å·¥ä½œè€…è§†å›¾ã€‚
+         * @param workerView å·¥ä½œè€…è§†å›¾ã€‚
          */
         public void setWorkerView(JComponent workerView) {
             if (workerView == null) {
@@ -192,7 +192,7 @@ public class BaseUtilities implements IBaseConstants {
         }
 
         /**
-         * ¸Ä±äµ½¹¤×÷ÕßÊÓÍ¼¡£
+         * æ”¹å˜åˆ°å·¥ä½œè€…è§†å›¾ã€‚
          */
         public void changeToWorkerView() {
             if (m_workerView == null) {
@@ -203,7 +203,7 @@ public class BaseUtilities implements IBaseConstants {
         }
 
         /**
-         * ¸Ä±äµ½µÈ´ıÊÓÍ¼¡£
+         * æ”¹å˜åˆ°ç­‰å¾…è§†å›¾ã€‚
          */
         public void changeToWaitingView() {
             if (m_workerView != null) {
@@ -214,8 +214,8 @@ public class BaseUtilities implements IBaseConstants {
         }
 
         /**
-         * ¸Ä±äµ½¡£
-         * @param view ÊÓÍ¼¡£
+         * æ”¹å˜åˆ°ã€‚
+         * @param view è§†å›¾ã€‚
          */
         private void changeTo(JComponent view) {
             if (m_current != view) {
@@ -264,7 +264,7 @@ public class BaseUtilities implements IBaseConstants {
     /*------------------------------------- Public Static Method -------------------------------------*/
 
     /**
-     * ´òÓ¡UIDefaults¡£
+     * æ‰“å°UIDefaultsã€‚
      */
     public static void printUIDefaults() {
         UIDefaults defaults = UIManager.getDefaults();
@@ -276,9 +276,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÅĞ¶ÏÊÇ·ñÊÇËØÊı¡£Ê±¼ä¸´ÔÓ¶ÈO(n)¡£
-     * @param number Êı×Ö¡£
-     * @return ±êÊ¶ÊÇ·ñÊÇËØÊı¡£
+     * åˆ¤æ–­æ˜¯å¦æ˜¯ç´ æ•°ã€‚æ—¶é—´å¤æ‚åº¦O(n)ã€‚
+     * @param number æ•°å­—ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æ˜¯ç´ æ•°ã€‚
      */
     public static final boolean isPrime(int number) {
         if (number < 2) {
@@ -295,10 +295,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÅĞ¶Ï°üº­¹ØÏµ¡£
-     * @param values È«¼¯¡£
-     * @param value ×Ó¼¯¡£
-     * @return Îªtrue±íÊ¾°üº­£¬Îªfalse±íÊ¾²»°üº­¡£
+     * åˆ¤æ–­åŒ…æ¶µå…³ç³»ã€‚
+     * @param values å…¨é›†ã€‚
+     * @param value å­é›†ã€‚
+     * @return ä¸ºtrueè¡¨ç¤ºåŒ…æ¶µï¼Œä¸ºfalseè¡¨ç¤ºä¸åŒ…æ¶µã€‚
      */
     public static boolean contains(int[] values, int value) {
         for (int i = 0; i < values.length; i++) {
@@ -311,31 +311,31 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ²ÉÓÃResourceBundle»úÖÆ»ñÈ¡i18nĞÅÏ¢¡£
-     * @param baseName ×ÊÔ´°üµÄ»ù±¾Ãû³Æ£¬ÊÇÒ»¸öÍêÈ«ÏŞ¶¨ÀàÃû¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢£¬Èç¹ûÖ¸¶¨µÄ×ÊÔ´ÕÒ²»µ½½«Ö±½Ó·µ»Øi18nKey¡£
+     * é‡‡ç”¨ResourceBundleæœºåˆ¶è·å–i18nä¿¡æ¯ã€‚
+     * @param baseName èµ„æºåŒ…çš„åŸºæœ¬åç§°ï¼Œæ˜¯ä¸€ä¸ªå®Œå…¨é™å®šç±»åã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ï¼Œå¦‚æœæŒ‡å®šçš„èµ„æºæ‰¾ä¸åˆ°å°†ç›´æ¥è¿”å›i18nKeyã€‚
      */
     public static String getI18nMessage(String baseName, String i18nKey) {
         try {
             return ResourceBundle.getBundle(baseName).getString(i18nKey);
 
-        } catch (MissingResourceException ex) { //ÕÒ²»µ½Ö¸¶¨µÄ×ÊÔ´
+        } catch (MissingResourceException ex) { //æ‰¾ä¸åˆ°æŒ‡å®šçš„èµ„æº
             return i18nKey;
         }
     }
 
     /**
-     * »ØÏÔÏûÏ¢¡£
-     * @param msg ÏûÏ¢¡£
+     * å›æ˜¾æ¶ˆæ¯ã€‚
+     * @param msg æ¶ˆæ¯ã€‚
      */
     public static void echo(String msg) {
         System.out.println(msg);
     }
 
     /**
-     * µ±Ç°Ïß³ÌË¯ÃßÖ¸¶¨Ê±¼ä¡£
-     * @param millis Ö¸¶¨Ê±¼ä£¨µ¥Î»£ººÁÃë£©¡£
+     * å½“å‰çº¿ç¨‹ç¡çœ æŒ‡å®šæ—¶é—´ã€‚
+     * @param millis æŒ‡å®šæ—¶é—´ï¼ˆå•ä½ï¼šæ¯«ç§’ï¼‰ã€‚
      */
     public static void sleep(int millis) {
         try {
@@ -347,7 +347,7 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¿ØÖÆÌ¨ÖĞµÈ´ı°´ÏÂ»Ø³µ¡£
+     * æ§åˆ¶å°ä¸­ç­‰å¾…æŒ‰ä¸‹å›è½¦ã€‚
      */
     public static void waitForEnterPressed() {
         try {
@@ -360,10 +360,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÔØÈëÊôĞÔ¼¯¡£
-     * @param propertiesFile ÊôĞÔÎÄ¼ş¡£
-     * @return ÊôĞÔ¼¯¡£
-     * @throws IOException Èç¹û¶ÁÊôĞÔÎÄ¼şÊ±·¢ÉúIO´íÎó¡£
+     * è½½å…¥å±æ€§é›†ã€‚
+     * @param propertiesFile å±æ€§æ–‡ä»¶ã€‚
+     * @return å±æ€§é›†ã€‚
+     * @throws IOException å¦‚æœè¯»å±æ€§æ–‡ä»¶æ—¶å‘ç”ŸIOé”™è¯¯ã€‚
      */
     public static Properties loadProperties(File propertiesFile) throws IOException {
         Properties properties = new Properties();
@@ -376,21 +376,21 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´æ´¢ÊôĞÔ¼¯¡£
-     * @param properties ÊôĞÔ¼¯¡£
-     * @param propertiesFile ÊôĞÔÎÄ¼ş¡£
-     * @throws IOException Èç¹ûĞ´ÊôĞÔÎÄ¼şÊ±·¢ÉúIO´íÎó¡£
+     * å­˜å‚¨å±æ€§é›†ã€‚
+     * @param properties å±æ€§é›†ã€‚
+     * @param propertiesFile å±æ€§æ–‡ä»¶ã€‚
+     * @throws IOException å¦‚æœå†™å±æ€§æ–‡ä»¶æ—¶å‘ç”ŸIOé”™è¯¯ã€‚
      */
     public static void storeProperties(Properties properties, File propertiesFile) throws IOException {
         storeProperties(properties, propertiesFile, null);
     }
 
     /**
-     * ´æ´¢ÊôĞÔ¼¯¡£
-     * @param properties ÊôĞÔ¼¯¡£
-     * @param propertiesFile ÊôĞÔÎÄ¼ş¡£
-     * @param comments ×¢ÊÍ¡£
-     * @throws IOException Èç¹ûĞ´ÊôĞÔÎÄ¼şÊ±·¢ÉúIO´íÎó¡£
+     * å­˜å‚¨å±æ€§é›†ã€‚
+     * @param properties å±æ€§é›†ã€‚
+     * @param propertiesFile å±æ€§æ–‡ä»¶ã€‚
+     * @param comments æ³¨é‡Šã€‚
+     * @throws IOException å¦‚æœå†™å±æ€§æ–‡ä»¶æ—¶å‘ç”ŸIOé”™è¯¯ã€‚
      */
     public static void storeProperties(Properties properties, File propertiesFile, String comments) throws IOException {
         if (properties == null) {
@@ -403,11 +403,11 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param type Í¼±êÎÄ¼şËùÔÚÀà¡£
-     * @param baseName ×ÊÔ´»ù±¾Ãû³Æ¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param type å›¾æ ‡æ–‡ä»¶æ‰€åœ¨ç±»ã€‚
+     * @param baseName èµ„æºåŸºæœ¬åç§°ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     public static Icon getIcon(Class type, String baseName, String iconFilename) {
         URL icon = type.getClassLoader().getResource(baseName + iconFilename);
@@ -415,37 +415,37 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÉèÖÃ°´Å¥Í¼±ê¼¯¡£
-     * @param button °´Å¥¡£
-     * @param defaultIcon È±Ê¡Í¼±ê¡£
-     * @param pressedIcon °´ÏÂµÄÍ¼±ê¡£
-     * @param rolloverIcon ¾­¹ıµÄÍ¼±ê¡£
+     * è®¾ç½®æŒ‰é’®å›¾æ ‡é›†ã€‚
+     * @param button æŒ‰é’®ã€‚
+     * @param defaultIcon ç¼ºçœå›¾æ ‡ã€‚
+     * @param pressedIcon æŒ‰ä¸‹çš„å›¾æ ‡ã€‚
+     * @param rolloverIcon ç»è¿‡çš„å›¾æ ‡ã€‚
      */
     public static void setButtonIcons(AbstractButton button, Icon defaultIcon, Icon pressedIcon, Icon rolloverIcon) {
         setButtonIcons(button, defaultIcon, pressedIcon, rolloverIcon, null);
     }
 
     /**
-     * ÉèÖÃ°´Å¥Í¼±ê¼¯¡£
-     * @param button °´Å¥¡£
-     * @param defaultIcon È±Ê¡Í¼±ê¡£
-     * @param pressedIcon °´ÏÂµÄÍ¼±ê¡£
-     * @param rolloverIcon ¾­¹ıµÄÍ¼±ê¡£
-     * @param disabledIcon ·ÇÊ¹ÄÜµÄÍ¼±ê¡£
+     * è®¾ç½®æŒ‰é’®å›¾æ ‡é›†ã€‚
+     * @param button æŒ‰é’®ã€‚
+     * @param defaultIcon ç¼ºçœå›¾æ ‡ã€‚
+     * @param pressedIcon æŒ‰ä¸‹çš„å›¾æ ‡ã€‚
+     * @param rolloverIcon ç»è¿‡çš„å›¾æ ‡ã€‚
+     * @param disabledIcon éä½¿èƒ½çš„å›¾æ ‡ã€‚
      */
     public static void setButtonIcons(AbstractButton button, Icon defaultIcon, Icon pressedIcon, Icon rolloverIcon, Icon disabledIcon) {
         setButtonIcons(button, defaultIcon, pressedIcon, rolloverIcon, null, null, disabledIcon);
     }
 
     /**
-     * ÉèÖÃ°´Å¥Í¼±ê¼¯¡£
-     * @param button °´Å¥¡£
-     * @param defaultIcon È±Ê¡Í¼±ê¡£
-     * @param pressedIcon °´ÏÂµÄÍ¼±ê¡£
-     * @param rolloverIcon ¾­¹ıµÄÍ¼±ê¡£
-     * @param selectedIcon Ñ¡ÖĞµÄÍ¼±ê¡£
-     * @param rolloverSelectedIcon ¾­¹ıÑ¡ÖĞµÄÍ¼±ê¡£
-     * @param disabledIcon ·ÇÊ¹ÄÜµÄÍ¼±ê¡£
+     * è®¾ç½®æŒ‰é’®å›¾æ ‡é›†ã€‚
+     * @param button æŒ‰é’®ã€‚
+     * @param defaultIcon ç¼ºçœå›¾æ ‡ã€‚
+     * @param pressedIcon æŒ‰ä¸‹çš„å›¾æ ‡ã€‚
+     * @param rolloverIcon ç»è¿‡çš„å›¾æ ‡ã€‚
+     * @param selectedIcon é€‰ä¸­çš„å›¾æ ‡ã€‚
+     * @param rolloverSelectedIcon ç»è¿‡é€‰ä¸­çš„å›¾æ ‡ã€‚
+     * @param disabledIcon éä½¿èƒ½çš„å›¾æ ‡ã€‚
      */
     public static void setButtonIcons(AbstractButton button,
                                       Icon defaultIcon,
@@ -474,8 +474,8 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Ìí¼ÓÍÏ¶¯Ñ¡Ôñ¡£
-     * @param list ÁĞ±í¡£
+     * æ·»åŠ æ‹–åŠ¨é€‰æ‹©ã€‚
+     * @param list åˆ—è¡¨ã€‚
      */
     public static void addDragSelection(final JList list) {
         final Point prePoint = new Point();
@@ -504,9 +504,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ²»Ìî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥ä¸å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridy The initial gridy value.
      */
     public static void addComponentWithNoneFill(JPanel view, JComponent component, int gridy) {
@@ -514,9 +514,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ²»Ìî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥ä¸å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      */
@@ -525,9 +525,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ²»Ìî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥ä¸å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param anchor The initial anchor value.
@@ -537,9 +537,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ²»Ìî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥ä¸å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -557,9 +557,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔºáÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ¨ªå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridy The initial gridy value.
      */
     public static void addComponentWithHorizontalFill(JPanel view, JComponent component, int gridy) {
@@ -567,9 +567,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔºáÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ¨ªå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      */
@@ -578,9 +578,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔºáÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ¨ªå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param anchor The initial anchor value.
@@ -590,9 +590,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔºáÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ¨ªå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -610,9 +610,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ×İÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥çºµå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridy The initial gridy value.
      */
     public static void addComponentWithVerticalFill(JPanel view, JComponent component, int gridy) {
@@ -620,9 +620,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ×İÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥çºµå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      */
@@ -631,9 +631,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ×İÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥çºµå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param anchor The initial anchor value.
@@ -643,9 +643,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔ×İÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥çºµå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -663,9 +663,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔË«ÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥åŒå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridy The initial gridy value.
      */
     public static void addComponentWithBothFill(JPanel view, JComponent component, int gridy) {
@@ -673,9 +673,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔË«ÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥åŒå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      */
@@ -684,9 +684,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔË«ÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥åŒå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param anchor The initial anchor value.
@@ -696,9 +696,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔË«ÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥åŒå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -716,9 +716,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔÎŞ·ìË«ÏòÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ— ç¼åŒå‘å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -736,9 +736,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÔÎŞ·ìÌî³äµÄ·½Ê½Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * ä»¥æ— ç¼å¡«å……çš„æ–¹å¼æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -774,9 +774,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -812,9 +812,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Ìí¼Ó×é¼ş¡£
-     * @param view ÊÓÍ¼¡£
-     * @param component ×é¼ş¡£
+     * æ·»åŠ ç»„ä»¶ã€‚
+     * @param view è§†å›¾ã€‚
+     * @param component ç»„ä»¶ã€‚
      * @param gridx The initial gridx value.
      * @param gridy The initial gridy value.
      * @param gridwidth The initial gridwidth value.
@@ -865,9 +865,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´´½¨µÈ´ıÊÓÍ¼¡£
-     * @param waitingText µÈ´ıÖĞÎÄ±¾¡£
-     * @return µÈ´ıÊÓÍ¼¡£
+     * åˆ›å»ºç­‰å¾…è§†å›¾ã€‚
+     * @param waitingText ç­‰å¾…ä¸­æ–‡æœ¬ã€‚
+     * @return ç­‰å¾…è§†å›¾ã€‚
      */
     public static JPanel createWaitingView(String waitingText) {
         JProgressBar waitingBar = new JProgressBar();
@@ -884,8 +884,8 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´´½¨µÈ´ıÍ¼Æ¬ÊÓÍ¼¡£
-     * @return µÈ´ıÍ¼Æ¬ÊÓÍ¼¡£
+     * åˆ›å»ºç­‰å¾…å›¾ç‰‡è§†å›¾ã€‚
+     * @return ç­‰å¾…å›¾ç‰‡è§†å›¾ã€‚
      */
     public static JPanel createWaitingImageView() {
         JPanel waitingImageView = new JPanel(new GridBagLayout());
@@ -894,14 +894,14 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´´½¨³ß´çÏŞÖÆÆ÷¡£
-     * @return ³ß´çÏŞÖÆÆ÷¡£
+     * åˆ›å»ºå°ºå¯¸é™åˆ¶å™¨ã€‚
+     * @return å°ºå¯¸é™åˆ¶å™¨ã€‚
      */
     public static ComponentListener createSizeLimiter() {
         return new ComponentListener() {
 
             /**
-             * ¾ÉµÄ±ß½ç¡£
+             * æ—§çš„è¾¹ç•Œã€‚
              */
             protected Rectangle m_oldBounds;
 
@@ -937,15 +937,15 @@ public class BaseUtilities implements IBaseConstants {
              */
             public void componentResized(ComponentEvent evt) {
                 if (m_oldBounds != null) {
-                    /* »ñÈ¡Ä¿±ê×é¼ş */
+                    /* è·å–ç›®æ ‡ç»„ä»¶ */
                     Component component = evt.getComponent();
 
-                    /* »ñÈ¡Ä¿±ê×é¼şÉèÖÃµÄ±ß½çºÍ×îĞ¡×î´ó³ß´ç */
+                    /* è·å–ç›®æ ‡ç»„ä»¶è®¾ç½®çš„è¾¹ç•Œå’Œæœ€å°æœ€å¤§å°ºå¯¸ */
                     Rectangle bounds = component.getBounds();
                     Dimension minSize = component.getMinimumSize();
                     Dimension maxSize = component.getMaximumSize();
 
-                    /* È·¶¨Ä¿±ê×é¼şĞÂµÄxÖá×ø±ê¼°¿í¶È */
+                    /* ç¡®å®šç›®æ ‡ç»„ä»¶æ–°çš„xè½´åæ ‡åŠå®½åº¦ */
                     if (bounds.width < minSize.width) {
                         bounds.x -= (bounds.x == m_oldBounds.x ? 0 : minSize.width - bounds.width);
                         bounds.width = minSize.width;
@@ -955,7 +955,7 @@ public class BaseUtilities implements IBaseConstants {
                         bounds.width = maxSize.width;
                     }
 
-                    /* È·¶¨Ä¿±ê×é¼şĞÂµÄyÖá×ø±ê¼°¸ß¶È */
+                    /* ç¡®å®šç›®æ ‡ç»„ä»¶æ–°çš„yè½´åæ ‡åŠé«˜åº¦ */
                     if (bounds.height < minSize.height) {
                         bounds.y -= (bounds.y == m_oldBounds.y ? 0 : minSize.height - bounds.height);
                         bounds.height = minSize.height;
@@ -965,10 +965,10 @@ public class BaseUtilities implements IBaseConstants {
                         bounds.height = maxSize.height;
                     }
 
-                    /* ÉèÖÃÄ¿±ê×é¼şµÄĞÂ±ß½ç */
+                    /* è®¾ç½®ç›®æ ‡ç»„ä»¶çš„æ–°è¾¹ç•Œ */
                     component.setBounds(bounds);
 
-                    /* ±£´æĞÂµÄ±ß½ç */
+                    /* ä¿å­˜æ–°çš„è¾¹ç•Œ */
                     m_oldBounds = bounds;
                 }
             }
@@ -977,10 +977,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô±í¸ñ½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ±í¸ñ¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹è¡¨æ ¼è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, JTable table, Component parent) {
         String oldText = text;
@@ -998,10 +998,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô±í¸ñ½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ±í¸ñ¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹è¡¨æ ¼è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTable table) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -1046,12 +1046,12 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô±í¸ñ½øĞĞÎÄ±¾ËÑË÷¶¨Î»£¨×¢Òâ£º´Ë·½·¨Î´½øĞĞ²ÎÊı¹ıÂË£¬½÷É÷Ê¹ÓÃ£©¡£
-     * @param text ÎÄ±¾¡£
-     * @param table ±í¸ñ¡£
-     * @param row ĞĞ¡£
-     * @param column ÁĞ¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹è¡¨æ ¼è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ï¼ˆæ³¨æ„ï¼šæ­¤æ–¹æ³•æœªè¿›è¡Œå‚æ•°è¿‡æ»¤ï¼Œè°¨æ…ä½¿ç”¨ï¼‰ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param table è¡¨æ ¼ã€‚
+     * @param row è¡Œã€‚
+     * @param column åˆ—ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTable table, int row, int column) {
         for (int i = column, size = table.getColumnCount(); i < size; i++) {
@@ -1066,10 +1066,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @param parent ¸¸×é¼ş¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @param parent çˆ¶ç»„ä»¶ã€‚
      */
     public static void searchText(String text, JTree tree, Component parent) {
         String oldText = text;
@@ -1087,10 +1087,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTree tree) {
         text = text == null ? null : text.trim().toLowerCase();
@@ -1122,9 +1122,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡½Úµã¼¯¡£
-     * @param node ½Úµã¡£
-     * @return ½Úµã¼¯¡£
+     * è·å–èŠ‚ç‚¹é›†ã€‚
+     * @param node èŠ‚ç‚¹ã€‚
+     * @return èŠ‚ç‚¹é›†ã€‚
      */
     public static List<DefaultMutableTreeNode> getNodes(DefaultMutableTreeNode node) {
         List<DefaultMutableTreeNode> nodes = new ArrayList<DefaultMutableTreeNode>();
@@ -1140,11 +1140,11 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ¶Ô×ÛºÏÊ÷½Úµã½øĞĞÎÄ±¾ËÑË÷¶¨Î»¡£
-     * @param text ÎÄ±¾¡£
-     * @param tree Ê÷¡£
-     * @param nodes ½Úµã¼¯¡£
-     * @return ±êÊ¶ÊÇ·ñËÑË÷µ½Ö¸¶¨µÄÎÄ±¾¡£
+     * å¯¹ç»¼åˆæ ‘èŠ‚ç‚¹è¿›è¡Œæ–‡æœ¬æœç´¢å®šä½ã€‚
+     * @param text æ–‡æœ¬ã€‚
+     * @param tree æ ‘ã€‚
+     * @param nodes èŠ‚ç‚¹é›†ã€‚
+     * @return æ ‡è¯†æ˜¯å¦æœç´¢åˆ°æŒ‡å®šçš„æ–‡æœ¬ã€‚
      */
     public static boolean searchText(String text, JTree tree, List<DefaultMutableTreeNode> nodes) {
         for (DefaultMutableTreeNode node : nodes) {
@@ -1165,9 +1165,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´´½¨ÕûĞÍÊı×é£¬´Ó0¿ªÊ¼ÇÒÁ¬ĞøµÄ¡£
-     * @param length ³¤¶È¡£
-     * @return ÕûĞÍÊı×é¡£
+     * åˆ›å»ºæ•´å‹æ•°ç»„ï¼Œä»0å¼€å§‹ä¸”è¿ç»­çš„ã€‚
+     * @param length é•¿åº¦ã€‚
+     * @return æ•´å‹æ•°ç»„ã€‚
      */
     public static int[] createIntegers(int length) {
         int[] integers = new int[length];
@@ -1180,8 +1180,8 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÖÃ¿ÕÖ¸¶¨µÄ²Ëµ¥¡£
-     * @param menu Ö¸¶¨µÄ²Ëµ¥¡£
+     * ç½®ç©ºæŒ‡å®šçš„èœå•ã€‚
+     * @param menu æŒ‡å®šçš„èœå•ã€‚
      */
     public static void emptyMenu(JMenu menu) {
         menu.removeAll();
@@ -1193,9 +1193,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Ìí¼Ó²Ëµ¥Ïî£¬Ìí¼ÓÇ°Èç¹ûÓĞ¿Õ²Ëµ¥ÏîÔòÒÆ³ı¡£
-     * @param menu ²Ëµ¥¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * æ·»åŠ èœå•é¡¹ï¼Œæ·»åŠ å‰å¦‚æœæœ‰ç©ºèœå•é¡¹åˆ™ç§»é™¤ã€‚
+     * @param menu èœå•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      */
     public static void addMenuItem(JMenu menu, JMenuItem menuItem) {
         if (menu.getItemCount() == 1 && I18N_INFO_EMPTYITEM.equals(menu.getItem(0).getText())) {
@@ -1206,9 +1206,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÒÆ³ı²Ëµ¥Ïî£¬ÒÆ³ıºóÈç¹û²Ëµ¥Îª¿ÕÔòÌí¼Ó¿Õ²Ëµ¥Ïî¡£
-     * @param menu ²Ëµ¥¡£
-     * @param menuItem ²Ëµ¥Ïî¡£
+     * ç§»é™¤èœå•é¡¹ï¼Œç§»é™¤åå¦‚æœèœå•ä¸ºç©ºåˆ™æ·»åŠ ç©ºèœå•é¡¹ã€‚
+     * @param menu èœå•ã€‚
+     * @param menuItem èœå•é¡¹ã€‚
      */
     public static void removeMenuItem(JMenu menu, JMenuItem menuItem) {
         menu.remove(menuItem);
@@ -1222,9 +1222,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ´´½¨²Ëµ¥Ïî¼¯¡£
-     * @param actions ¶¯×÷¼¯¡£
-     * @return ²Ëµ¥Ïî¼¯¡£
+     * åˆ›å»ºèœå•é¡¹é›†ã€‚
+     * @param actions åŠ¨ä½œé›†ã€‚
+     * @return èœå•é¡¹é›†ã€‚
      */
     public static JMenuItem[] createMenuItems(Action[] actions) {
         if (actions == null) {
@@ -1241,72 +1241,72 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
      */
     public static void setAction(Action action, String name) {
         setAction(action, name, '\0');
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
-     * @param mnemonic ¼üÅÌÖú¼Ç·û¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
+     * @param mnemonic é”®ç›˜åŠ©è®°ç¬¦ã€‚
      */
     public static void setAction(Action action, String name, char mnemonic) {
         setAction(action, name, mnemonic, null);
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param icon Í¼±ê¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param icon å›¾æ ‡ã€‚
      */
     public static void setAction(Action action, Icon icon) {
         setAction(action, "", icon);
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
-     * @param icon Í¼±ê¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
+     * @param icon å›¾æ ‡ã€‚
      */
     public static void setAction(Action action, String name, Icon icon) {
         setAction(action, name, '\0', icon);
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
-     * @param mnemonic ¼üÅÌÖú¼Ç·û¡£
-     * @param icon Í¼±ê¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
+     * @param mnemonic é”®ç›˜åŠ©è®°ç¬¦ã€‚
+     * @param icon å›¾æ ‡ã€‚
      */
     public static void setAction(Action action, String name, char mnemonic, Icon icon) {
         setAction(action, name, mnemonic, icon, false);
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
-     * @param mnemonic ¼üÅÌÖú¼Ç·û¡£
-     * @param isOpenWindow ±êÊ¶ÊÇ·ñÎª´ò¿ª´°¿Ú¶¯×÷¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
+     * @param mnemonic é”®ç›˜åŠ©è®°ç¬¦ã€‚
+     * @param isOpenWindow æ ‡è¯†æ˜¯å¦ä¸ºæ‰“å¼€çª—å£åŠ¨ä½œã€‚
      */
     public static void setAction(Action action, String name, char mnemonic, boolean isOpenWindow) {
         setAction(action, name, mnemonic, null, isOpenWindow);
     }
 
     /**
-     * ÉèÖÃ¶¯×÷¡£
-     * @param action ¶¯×÷¡£
-     * @param name Ãû×Ö¡£
-     * @param mnemonic ¼üÅÌÖú¼Ç·û¡£
-     * @param icon Í¼±ê¡£
-     * @param isOpenWindow ±êÊ¶ÊÇ·ñÎª´ò¿ª´°¿Ú¶¯×÷¡£
+     * è®¾ç½®åŠ¨ä½œã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @param name åå­—ã€‚
+     * @param mnemonic é”®ç›˜åŠ©è®°ç¬¦ã€‚
+     * @param icon å›¾æ ‡ã€‚
+     * @param isOpenWindow æ ‡è¯†æ˜¯å¦ä¸ºæ‰“å¼€çª—å£åŠ¨ä½œã€‚
      */
     public static void setAction(Action action, String name, char mnemonic, Icon icon, boolean isOpenWindow) {
         name = name == null ? "" : name;
@@ -1321,21 +1321,21 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡´ø¼üÅÌÖú¼Ç·ûµÄÎÄ±¾¡£
-     * @param text Ö¸¶¨ÎÄ±¾¡£
-     * @param mnemonic Ö¸¶¨¼üÅÌÖú¼Ç·û¡£
-     * @return Èç¹ûÖ¸¶¨ÎÄ±¾ÒÑ°üº­Ö¸¶¨¼üÅÌÖú¼Ç·ûÔò·µ»ØÖ¸¶¨ÎÄ±¾±¾Éí£¬·ñÔò½«¼ÓÉÏÖ¸¶¨¼üÅÌÖú¼Ç·ûºó×º¡£
+     * è·å–å¸¦é”®ç›˜åŠ©è®°ç¬¦çš„æ–‡æœ¬ã€‚
+     * @param text æŒ‡å®šæ–‡æœ¬ã€‚
+     * @param mnemonic æŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦ã€‚
+     * @return å¦‚æœæŒ‡å®šæ–‡æœ¬å·²åŒ…æ¶µæŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦åˆ™è¿”å›æŒ‡å®šæ–‡æœ¬æœ¬èº«ï¼Œå¦åˆ™å°†åŠ ä¸ŠæŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦åç¼€ã€‚
      */
     public static String getMnemonicText(String text, char mnemonic) {
         return getMnemonicText(text, mnemonic, false);
     }
 
     /**
-     * »ñÈ¡´ø¼üÅÌÖú¼Ç·ûµÄÎÄ±¾¡£
-     * @param text Ö¸¶¨ÎÄ±¾¡£
-     * @param mnemonic Ö¸¶¨¼üÅÌÖú¼Ç·û¡£
-     * @param isOpenWindow ±êÊ¶ÊÇ·ñÎª´ò¿ª´°¿Ú¶¯×÷¡£
-     * @return Èç¹ûÖ¸¶¨ÎÄ±¾ÒÑ°üº­Ö¸¶¨¼üÅÌÖú¼Ç·ûÔò·µ»ØÖ¸¶¨ÎÄ±¾±¾Éí£¬·ñÔò½«¼ÓÉÏÖ¸¶¨¼üÅÌÖú¼Ç·ûºó×º¡£
+     * è·å–å¸¦é”®ç›˜åŠ©è®°ç¬¦çš„æ–‡æœ¬ã€‚
+     * @param text æŒ‡å®šæ–‡æœ¬ã€‚
+     * @param mnemonic æŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦ã€‚
+     * @param isOpenWindow æ ‡è¯†æ˜¯å¦ä¸ºæ‰“å¼€çª—å£åŠ¨ä½œã€‚
+     * @return å¦‚æœæŒ‡å®šæ–‡æœ¬å·²åŒ…æ¶µæŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦åˆ™è¿”å›æŒ‡å®šæ–‡æœ¬æœ¬èº«ï¼Œå¦åˆ™å°†åŠ ä¸ŠæŒ‡å®šé”®ç›˜åŠ©è®°ç¬¦åç¼€ã€‚
      */
     public static String getMnemonicText(String text, char mnemonic, boolean isOpenWindow) {
         String openWindowDesc = isOpenWindow ? "..." : "";
@@ -1345,9 +1345,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Ö»°üº­Í¼±êµÄ°´Å¥¡£
-     * @param action ¶¯×÷¡£
-     * @return Ö»°üº­Í¼±êµÄ°´Å¥¡£
+     * è·å–åªåŒ…æ¶µå›¾æ ‡çš„æŒ‰é’®ã€‚
+     * @param action åŠ¨ä½œã€‚
+     * @return åªåŒ…æ¶µå›¾æ ‡çš„æŒ‰é’®ã€‚
      */
     public static JButton getIconButton(Action action) {
         JButton btn = new JButton();
@@ -1357,9 +1357,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÉèÖÃÖ»°üº­Í¼±êµÄ°´Å¥¡£
-     * @param btn Ö»°üº­Í¼±êµÄ°´Å¥¡£
-     * @param action ¶¯×÷¡£
+     * è®¾ç½®åªåŒ…æ¶µå›¾æ ‡çš„æŒ‰é’®ã€‚
+     * @param btn åªåŒ…æ¶µå›¾æ ‡çš„æŒ‰é’®ã€‚
+     * @param action åŠ¨ä½œã€‚
      */
     public static void setIconButton(JButton btn, Action action) {
         btn.setAction(action);
@@ -1367,9 +1367,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Ñ¡ÔñÄ£ĞÍÒÑÑ¡ÔñµÄËùÓĞË÷Òı¡£
-     * @param sm Ñ¡ÔñÄ£ĞÍ¡£
-     * @return Ñ¡ÔñÄ£ĞÍÒÑÑ¡ÔñµÄËùÓĞË÷Òı¡£
+     * è·å–é€‰æ‹©æ¨¡å‹å·²é€‰æ‹©çš„æ‰€æœ‰ç´¢å¼•ã€‚
+     * @param sm é€‰æ‹©æ¨¡å‹ã€‚
+     * @return é€‰æ‹©æ¨¡å‹å·²é€‰æ‹©çš„æ‰€æœ‰ç´¢å¼•ã€‚
      */
     public static int[] getSelection(ListSelectionModel sm) {
         int min = sm.getMinSelectionIndex();
@@ -1395,9 +1395,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * ÉèÖÃÑ¡ÔñÄ£ĞÍÒÑÑ¡ÔñµÄËùÓĞË÷Òı¡£
-     * @param sm Ñ¡ÔñÄ£ĞÍ¡£
-     * @param selection Ñ¡ÔñÄ£ĞÍÒÑÑ¡ÔñµÄËùÓĞË÷Òı¡£
+     * è®¾ç½®é€‰æ‹©æ¨¡å‹å·²é€‰æ‹©çš„æ‰€æœ‰ç´¢å¼•ã€‚
+     * @param sm é€‰æ‹©æ¨¡å‹ã€‚
+     * @param selection é€‰æ‹©æ¨¡å‹å·²é€‰æ‹©çš„æ‰€æœ‰ç´¢å¼•ã€‚
      */
     public static void setSelection(ListSelectionModel sm, int[] selection) {
         for (int i = 0; i < selection.length; i++) {
@@ -1411,40 +1411,40 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * °ÑÖ¸¶¨µÄ´°¿Ú¾ÓÖĞ¡£
-     * @param window Ö¸¶¨µÄ´°¿Ú¡£
+     * æŠŠæŒ‡å®šçš„çª—å£å±…ä¸­ã€‚
+     * @param window æŒ‡å®šçš„çª—å£ã€‚
      */
     public static void center(Window window) {
-        /* ´´½¨Ö¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* åˆ›å»ºæŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         Point location = new Point();
 
-        /* »ñÈ¡ÆÁÄ»µÄ³ß´çºÍÖ¸¶¨´°¿ÚµÄ³ß´ç */
+        /* è·å–å±å¹•çš„å°ºå¯¸å’ŒæŒ‡å®šçª—å£çš„å°ºå¯¸ */
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
         Dimension windowSize = window.getSize();
 
-        /* ¼ÆËãÖ¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* è®¡ç®—æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         location.x = screenSize.width / 2 - windowSize.width / 2;
         location.y = screenSize.height / 2 - windowSize.height / 2;
 
-        /* ¼ì²âxÖá×ø±êÊÇ·ñÔ½½ç */
+        /* æ£€æµ‹xè½´åæ ‡æ˜¯å¦è¶Šç•Œ */
         if (location.x < 0) {
             location.x = 0;
         }
 
-        /* ¼ì²âyÖá×ø±êÊÇ·ñÔ½½ç */
+        /* æ£€æµ‹yè½´åæ ‡æ˜¯å¦è¶Šç•Œ */
         if (location.y < 0) {
             location.y = 0;
         }
 
-        /* ÉèÖÃÖ¸¶¨´°¿Ú·ÅÔÚÆÁÄ»ÖĞÑëÊ±ºòµÄ×óÉÏ½Ç×ø±êµã */
+        /* è®¾ç½®æŒ‡å®šçª—å£æ”¾åœ¨å±å¹•ä¸­å¤®æ—¶å€™çš„å·¦ä¸Šè§’åæ ‡ç‚¹ */
         window.setLocation(location);
     }
 
     /**
-     * ×Ô¶¯Í£Ö¹±à¼­¡£
-     * @param editor ±à¼­Æ÷¡£
-     * @param editorComponent ±à¼­Æ÷×é¼ş¡£
-     * @throws NullPointerException Èç¹û²ÎÊıÎª¿ÕÔò»áÅ×³ö´ËÒì³£¡£
+     * è‡ªåŠ¨åœæ­¢ç¼–è¾‘ã€‚
+     * @param editor ç¼–è¾‘å™¨ã€‚
+     * @param editorComponent ç¼–è¾‘å™¨ç»„ä»¶ã€‚
+     * @throws NullPointerException å¦‚æœå‚æ•°ä¸ºç©ºåˆ™ä¼šæŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public static synchronized void autoStopCellEditing(final CellEditor editor, final Component editorComponent) {
         if (editor == null) {
@@ -1472,9 +1472,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡×é¼şËùÔÚµÄ´°¿Ú¡£
-     * @param component ×é¼ş¡£
-     * @return ´°¿Ú¡£
+     * è·å–ç»„ä»¶æ‰€åœ¨çš„çª—å£ã€‚
+     * @param component ç»„ä»¶ã€‚
+     * @return çª—å£ã€‚
      */
     public static Window getWindow(Component component) {
         Window aw = KeyboardFocusManager.getCurrentKeyboardFocusManager().getActiveWindow();
@@ -1494,8 +1494,8 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Èç¹ûµ±Ç°Ïß³ÌÊÇÊÂ¼şÅÉ·¢Ïß³Ì¾ÍÖ±½ÓÖ´ĞĞcode.run()£¬·ñÔò»áµ÷ÓÃSwingUtilities.invokeLater()°Ñcode·ÅÈëÊÂ¼ş¶ÓÁĞÖ´ĞĞ¡£
-     * @param code ĞèÒªÔËĞĞµÄ´úÂë¡£
+     * å¦‚æœå½“å‰çº¿ç¨‹æ˜¯äº‹ä»¶æ´¾å‘çº¿ç¨‹å°±ç›´æ¥æ‰§è¡Œcode.run()ï¼Œå¦åˆ™ä¼šè°ƒç”¨SwingUtilities.invokeLater()æŠŠcodeæ”¾å…¥äº‹ä»¶é˜Ÿåˆ—æ‰§è¡Œã€‚
+     * @param code éœ€è¦è¿è¡Œçš„ä»£ç ã€‚
      */
     public static void safelyInvokeLater(Runnable code) {
         if (SwingUtilities.isEventDispatchThread()) {
@@ -1507,10 +1507,10 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * Èç¹ûµ±Ç°Ïß³ÌÊÇÊÂ¼şÅÉ·¢Ïß³Ì¾ÍÖ±½ÓÖ´ĞĞcode.run()£¬·ñÔò»áµ÷ÓÃSwingUtilities.invokeAndWait()°Ñcode·ÅÈëÊÂ¼ş¶ÓÁĞÖ´ĞĞ¡£
-     * @param code ĞèÒªÔËĞĞµÄ´úÂë¡£
-     * @throws InvocationTargetException Èç¹ûÔÚÔËĞĞ code Ê±ÔòÅ×³ö´ËÒì³£¡£
-     * @throws InterruptedException Èç¹ûµÈ´ıÊÂ¼şÖ¸ÅÉÏß³ÌÖ´Íê³ÉÖ´ĞĞ code.run() Ê±±»ÖĞ¶ÏÔòÅ×³ö´ËÒì³£¡£
+     * å¦‚æœå½“å‰çº¿ç¨‹æ˜¯äº‹ä»¶æ´¾å‘çº¿ç¨‹å°±ç›´æ¥æ‰§è¡Œcode.run()ï¼Œå¦åˆ™ä¼šè°ƒç”¨SwingUtilities.invokeAndWait()æŠŠcodeæ”¾å…¥äº‹ä»¶é˜Ÿåˆ—æ‰§è¡Œã€‚
+     * @param code éœ€è¦è¿è¡Œçš„ä»£ç ã€‚
+     * @throws InvocationTargetException å¦‚æœåœ¨è¿è¡Œ code æ—¶åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
+     * @throws InterruptedException å¦‚æœç­‰å¾…äº‹ä»¶æŒ‡æ´¾çº¿ç¨‹æ‰§å®Œæˆæ‰§è¡Œ code.run() æ—¶è¢«ä¸­æ–­åˆ™æŠ›å‡ºæ­¤å¼‚å¸¸ã€‚
      */
     public static void safelyInvokeAndWait(Runnable code) throws InterruptedException, InvocationTargetException {
         if (SwingUtilities.isEventDispatchThread()) {
@@ -1522,9 +1522,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÀàµÄclassÎÄ¼şËùÔÚµÄÎ»ÖÃ¡£
-     * @param cls Ä¿±êÀà¡£
-     * @return Èç¹û»ñÈ¡³É¹¦Ôò·µ»Ø¶ÔÓ¦µÄÎÄ¼ş£¬²»³É¹¦Ôò·µ»Ønull¡£
+     * è·å–æŒ‡å®šç±»çš„classæ–‡ä»¶æ‰€åœ¨çš„ä½ç½®ã€‚
+     * @param cls ç›®æ ‡ç±»ã€‚
+     * @return å¦‚æœè·å–æˆåŠŸåˆ™è¿”å›å¯¹åº”çš„æ–‡ä»¶ï¼Œä¸æˆåŠŸåˆ™è¿”å›nullã€‚
      */
     public static File getClassLocation(Class cls) {
         try {
@@ -1536,52 +1536,52 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡Ö¸¶¨ÀàµÄclassÎÄ¼şËùÔÚµÄÎ»ÖÃ¡£
-     * @param cls Ä¿±êÀà¡£
-     * @param isGetParent Îªtrue·µ»ØµÄÊÇclassÎÄ¼şËùÔÚÀàÂ·¾¶µÄ¸¸Ä¿Â¼£»Îªfalse½«Ö±½Ó·µ»ØÀàÂ·¾¶£¨×¢Òâ£ºÈç¹ûclassÎÄ¼şÔÚjar»òzipÖĞ½«·µ»ØµÄÊÇjarÎÄ¼ş»òzipÎÄ¼şµÄÂ·¾¶£©¡£
-     * @param isRealSpace Îªtrue½«Ê¹ÓÃÕæÊµµÄ¿Õ¸ñÀ´Ìæ»»URLÀïÃæµÄ×ªÒå¿Õ¸ñ£¬Îªfalse½«Ö±½ÓÊ¹ÓÃURLÀïÃæ¹æ¶¨µÄ×ªÒå¿Õ¸ñ£¨×¢Òâ£ºÈç¹ûURLÓÃÓÚ¹¹½¨File£¬´Ë²ÎÊıĞèÒªÉèÖÃÎªtrue£©¡£
-     * @return ±êÊ¶Î»ÖÃ£¬Îªnull±íÊ¾targetClassÎªnull»ò¹¹ÔìURLÊ§°ÜÁË¡£
+     * è·å–æŒ‡å®šç±»çš„classæ–‡ä»¶æ‰€åœ¨çš„ä½ç½®ã€‚
+     * @param cls ç›®æ ‡ç±»ã€‚
+     * @param isGetParent ä¸ºtrueè¿”å›çš„æ˜¯classæ–‡ä»¶æ‰€åœ¨ç±»è·¯å¾„çš„çˆ¶ç›®å½•ï¼›ä¸ºfalseå°†ç›´æ¥è¿”å›ç±»è·¯å¾„ï¼ˆæ³¨æ„ï¼šå¦‚æœclassæ–‡ä»¶åœ¨jaræˆ–zipä¸­å°†è¿”å›çš„æ˜¯jaræ–‡ä»¶æˆ–zipæ–‡ä»¶çš„è·¯å¾„ï¼‰ã€‚
+     * @param isRealSpace ä¸ºtrueå°†ä½¿ç”¨çœŸå®çš„ç©ºæ ¼æ¥æ›¿æ¢URLé‡Œé¢çš„è½¬ä¹‰ç©ºæ ¼ï¼Œä¸ºfalseå°†ç›´æ¥ä½¿ç”¨URLé‡Œé¢è§„å®šçš„è½¬ä¹‰ç©ºæ ¼ï¼ˆæ³¨æ„ï¼šå¦‚æœURLç”¨äºæ„å»ºFileï¼Œæ­¤å‚æ•°éœ€è¦è®¾ç½®ä¸ºtrueï¼‰ã€‚
+     * @return æ ‡è¯†ä½ç½®ï¼Œä¸ºnullè¡¨ç¤ºtargetClassä¸ºnullæˆ–æ„é€ URLå¤±è´¥äº†ã€‚
      */
     public static URL getClassLocation(Class cls, boolean isGetParent, boolean isRealSpace) {
-        /* Ä¿±êÀàÅĞ¿Õ */
+        /* ç›®æ ‡ç±»åˆ¤ç©º */
         if (cls == null) {
             return null;
         }
 
         /*
-         * ×¢Òâ£ºÕâÀï¿ÉÒÔÖ±½Óµ÷ÓÃClass.getProtectionDomain().getCodeSource().getLocation()·½·¨À´µÃµ½ÎÒÃÇÏëÒªµÄLocation£¬µ«
-                         * ¡¡¡¡  ¡¡ÊÇÕâ¸ö·½·¨ÓĞ2¸öÏŞÖÆ²»Ì«·½±ã£º
-                         * ¡¡ ¡¡ ¡¡1.´Ë·½·¨ĞèÒªÏàÓ¦µÄ°²È«È¨ÏŞ£¬Èç¹ûÃ»ÓĞ£¬»áÅ×Java°²È«Òì³£µÄ¡£
-                         * ¡¡ ¡¡ ¡¡2.´Ë·½·¨µÄgetCodeSource()ÔÚµ±ClassÎªÆô¶¯Àà¼ÓÔØÆ÷¼ÓÔØÊ±»á·µ»Ønull£¬ËäÈ»ºÜÉÙ»áÓÃµ½£¬µ«Õâ»¹ÊÇÎÒÃÇ²»Ï£ÍûµÄ¡£
-                         * ¡¡¡¡  ¡¡»ùÓÚÒÔÉÏÁ½¸öÈ±µã£¬ÎÒÃÇ²»Ê¹ÓÃ´Ë·½·¨À´»ñÈ¡Location¡£
+         * æ³¨æ„ï¼šè¿™é‡Œå¯ä»¥ç›´æ¥è°ƒç”¨Class.getProtectionDomain().getCodeSource().getLocation()æ–¹æ³•æ¥å¾—åˆ°æˆ‘ä»¬æƒ³è¦çš„Locationï¼Œä½†
+                         * ã€€ã€€  ã€€æ˜¯è¿™ä¸ªæ–¹æ³•æœ‰2ä¸ªé™åˆ¶ä¸å¤ªæ–¹ä¾¿ï¼š
+                         * ã€€ ã€€ ã€€1.æ­¤æ–¹æ³•éœ€è¦ç›¸åº”çš„å®‰å…¨æƒé™ï¼Œå¦‚æœæ²¡æœ‰ï¼Œä¼šæŠ›Javaå®‰å…¨å¼‚å¸¸çš„ã€‚
+                         * ã€€ ã€€ ã€€2.æ­¤æ–¹æ³•çš„getCodeSource()åœ¨å½“Classä¸ºå¯åŠ¨ç±»åŠ è½½å™¨åŠ è½½æ—¶ä¼šè¿”å›nullï¼Œè™½ç„¶å¾ˆå°‘ä¼šç”¨åˆ°ï¼Œä½†è¿™è¿˜æ˜¯æˆ‘ä»¬ä¸å¸Œæœ›çš„ã€‚
+                         * ã€€ã€€  ã€€åŸºäºä»¥ä¸Šä¸¤ä¸ªç¼ºç‚¹ï¼Œæˆ‘ä»¬ä¸ä½¿ç”¨æ­¤æ–¹æ³•æ¥è·å–Locationã€‚
          */
 
-        /* »ñÈ¡Ä¿±êÀàclassÎÄ¼şµÄURL£¬²¢µÃµ½Ïà¹ØĞÅÏ¢ */
+        /* è·å–ç›®æ ‡ç±»classæ–‡ä»¶çš„URLï¼Œå¹¶å¾—åˆ°ç›¸å…³ä¿¡æ¯ */
         String clsName = cls.getName();
         String clsRes = "/" + clsName.replace('.', '/') + ".class";
         URL url = cls.getResource(clsRes);
         String protocol = url.getProtocol();
         String spec = url.toString();
 
-        /* TODO Ìæ»»¿Õ¸ñ£¬URLÖĞÃèÊö¿Õ¸ñÓÃ"%20"£¬ÓÃÕâÑùµÄURLÀ´¹¹½¨FileÀà½«ÎŞ·¨ÕÒµ½ÎÄ¼ş£¬±ØĞëÌæ»»µ½£¬µ«¿ÉÄÜ»á´æÔÚÆ½Ì¨²îÒìĞÔ¡£ */
+        /* TODO æ›¿æ¢ç©ºæ ¼ï¼ŒURLä¸­æè¿°ç©ºæ ¼ç”¨"%20"ï¼Œç”¨è¿™æ ·çš„URLæ¥æ„å»ºFileç±»å°†æ— æ³•æ‰¾åˆ°æ–‡ä»¶ï¼Œå¿…é¡»æ›¿æ¢åˆ°ï¼Œä½†å¯èƒ½ä¼šå­˜åœ¨å¹³å°å·®å¼‚æ€§ã€‚ */
         if (isRealSpace) {
             spec = spec.replaceAll("%20", " ");
         }
 
-        /* »ñÈ¡ÀàÂ·¾¶ */
-        if (protocol.equals("jar") || protocol.equals("zip")) { //classÎÄ¼şÊÇ·ÅÔÚjar»òzipÖĞµÄ
+        /* è·å–ç±»è·¯å¾„ */
+        if (protocol.equals("jar") || protocol.equals("zip")) { //classæ–‡ä»¶æ˜¯æ”¾åœ¨jaræˆ–zipä¸­çš„
             spec = spec.substring(spec.indexOf(":") + 1, spec.lastIndexOf("!"));
 
-        } else { //ÊÇÆÕÍ¨µÄÄ¿Â¼
+        } else { //æ˜¯æ™®é€šçš„ç›®å½•
             spec = spec.substring(0, spec.lastIndexOf(clsRes));
         }
 
-        /* »ñÈ¡ÀàÂ·¾¶µÄ¸¸Ä¿Â¼ */
+        /* è·å–ç±»è·¯å¾„çš„çˆ¶ç›®å½• */
         if (isGetParent) {
             spec = spec.substring(0, spec.lastIndexOf("/"));
         }
 
-        /* ¹¹ÔìURL²¢·µ»Ø */
+        /* æ„é€ URLå¹¶è¿”å› */
         try {
             return new URL(spec);
 
@@ -1591,9 +1591,9 @@ public class BaseUtilities implements IBaseConstants {
     }
 
     /**
-     * »ñÈ¡±ØÌîĞÅÏ¢£¨ÔÚ×Ö·û´®ºóÃæ¼ÓÒ»¸öÀ¶É«µÄĞÇºÅ£©¡£
-     * @param mustInfo ±ØÌîĞÅÏ¢¡£
-     * @return ¼ÓÉÏÀ¶É«ĞÇºÅµÄ±ØÌîĞÅÏ¢¡£
+     * è·å–å¿…å¡«ä¿¡æ¯ï¼ˆåœ¨å­—ç¬¦ä¸²åé¢åŠ ä¸€ä¸ªè“è‰²çš„æ˜Ÿå·ï¼‰ã€‚
+     * @param mustInfo å¿…å¡«ä¿¡æ¯ã€‚
+     * @return åŠ ä¸Šè“è‰²æ˜Ÿå·çš„å¿…å¡«ä¿¡æ¯ã€‚
      */
     public static String getMustInfo(String mustInfo) {
         return "<html>" + mustInfo + "<font color=\"#0000ff\">*</font>";
@@ -1607,18 +1607,18 @@ public class BaseUtilities implements IBaseConstants {
     /*------------------------------------- Protected Static Method -------------------------------------*/
 
     /**
-     * ²ÉÓÃResourceBundle»úÖÆ»ñÈ¡i18nĞÅÏ¢¡£
-     * @param i18nKey ¹ú¼Ê»¯ĞÅÏ¢¹Ø¼ü×Ö¡£
-     * @return ¹ú¼Ê»¯ĞÅÏ¢£¬Èç¹ûÖ¸¶¨µÄ×ÊÔ´ÕÒ²»µ½½«Ö±½Ó·µ»Øi18nKey¡£
+     * é‡‡ç”¨ResourceBundleæœºåˆ¶è·å–i18nä¿¡æ¯ã€‚
+     * @param i18nKey å›½é™…åŒ–ä¿¡æ¯å…³é”®å­—ã€‚
+     * @return å›½é™…åŒ–ä¿¡æ¯ï¼Œå¦‚æœæŒ‡å®šçš„èµ„æºæ‰¾ä¸åˆ°å°†ç›´æ¥è¿”å›i18nKeyã€‚
      */
     public static String getI18nMessage(String i18nKey) {
         return getI18nMessage("com.apollo.base.util.resource.Base", i18nKey);
     }
 
     /**
-     * »ñÈ¡Í¼±ê¡£
-     * @param iconFilename Í¼±êÎÄ¼şÃû¡£
-     * @return Í¼±ê¡£
+     * è·å–å›¾æ ‡ã€‚
+     * @param iconFilename å›¾æ ‡æ–‡ä»¶åã€‚
+     * @return å›¾æ ‡ã€‚
      */
     public static Icon getIcon(String iconFilename) {
         Icon icon = getIcon(BaseUtilities.class, "com/apollo/base/util/resource/icon/", iconFilename);
@@ -1668,10 +1668,10 @@ public class BaseUtilities implements IBaseConstants {
     /*------------------------------------- Private Constructor -------------------------------------*/
 
     /**
-     * ¹¹Ôì·½·¨¡£
+     * æ„é€ æ–¹æ³•ã€‚
      */
     private BaseUtilities() {
-        /* ½ûÖ¹´ÓÍâ²¿ÊµÀı»¯´ËÀà */
+        /* ç¦æ­¢ä»å¤–éƒ¨å®ä¾‹åŒ–æ­¤ç±» */
     }
 
     /*------------------------------------- Public Method -------------------------------------*/
