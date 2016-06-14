@@ -15,7 +15,7 @@
   <packaging>pom</packaging>
 
   <name>com.apollo.base.pom.karaf</name>
-  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/com.apollo.base.pom.karaf</url>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/pom/com.apollo.base.pom.karaf</url>
 
   <build>
     <plugins>
