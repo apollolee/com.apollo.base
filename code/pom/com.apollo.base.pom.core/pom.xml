@@ -18,7 +18,7 @@
   <url>https://github.com/apollolee/com.apollo.base/tree/master/code/pom/com.apollo.base.pom.core</url>
 
   <dependencies>
-  	<dependency>
+    <dependency>
       <groupId>org.slf4j</groupId>
       <artifactId>slf4j-api</artifactId>
       <version>1.7.2</version>
