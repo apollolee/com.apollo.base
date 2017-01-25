@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.apollo.base.pom</groupId>
+    <artifactId>scala</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.apollo.base.pom.scala</groupId>
+  <artifactId>osgi</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <name>com.apollo.base.pom.scala.osgi</name>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/pom/com.apollo.base.pom.scala.osgi</url>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.core</artifactId>
+      <version>4.2.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.osgi</groupId>
+      <artifactId>org.osgi.compendium</artifactId>
+      <version>4.2.0</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.felix</groupId>
+      <artifactId>org.apache.felix.scr.annotations</artifactId>
+      <version>1.9.8</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.apache.aries.blueprint</groupId>
+      <artifactId>org.apache.aries.blueprint.annotation.api</artifactId>
+      <version>1.0.1</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>

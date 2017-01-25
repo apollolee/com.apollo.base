@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>com.apollo.base.pom.scala</groupId>
+    <artifactId>osgi</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <groupId>com.apollo.base.pom.scala.osgi</groupId>
+  <artifactId>bundle</artifactId>
+  <version>${version}</version>
+  <packaging>pom</packaging>
+
+  <name>com.apollo.base.pom.scala.osgi.bundle</name>
+  <url>https://github.com/apollolee/com.apollo.base/tree/master/code/pom/com.apollo.base.pom.scala.osgi.bundle</url>
+
+  <properties>
+    <bundle.activator/>
+    <bundle.export.package/>
+    <bundle.import.package/>
+    <bundle.web.contextpath/>
+    <bundle.requir.bundle/>
+    <bundle.dynamicimport.package/>
+    <bundle.fragment.host/>
+    <bundle.blueprint.annotation>false</bundle.blueprint.annotation>
+
+    <deploy.output>undefined</deploy.output>
+    <deploy.conf>undefined</deploy.conf>
+    <deploy.home>undefined</deploy.home>
+
+    <deploy.bundle.conf>${deploy.output}/configuration</deploy.bundle.conf>
+    <deploy.bundle>${deploy.output}/system/${deploy.home}/${project.artifactId}</deploy.bundle>
+    <deploy.bundle.name>${project.version}/${project.artifactId}-${project.version}.jar</deploy.bundle.name>
+  </properties>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-clean-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>clean.deploy</id>
+            <phase>clean</phase>
+
+            <goals>
+              <goal>clean</goal>
+            </goals>
+
+            <configuration>
+              <filesets>
+                <fileset>
+                  <directory>${deploy.bundle}</directory>
+                </fileset>
+              </filesets>
+
+              <failOnError>false</failOnError>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-antrun-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>install.copy</id>
+            <phase>install</phase>
+
+            <goals>
+              <goal>run</goal>
+            </goals>
+
+            <configuration>
+              <target name='install.copy'>
+                <taskdef name='if' classname='ise.antelope.tasks.IfTask'/>
+
+                <if name='deploy.conf' value='undefined'>
+                  <else>
+                    <copy todir='${deploy.bundle.conf}' overwrite='true' failonerror='false'>
+                      <fileset dir='${deploy.conf}'>
+                        <include name='**/*'/>
+                      </fileset>
+                    </copy>
+                  </else>
+                </if>
+
+                <if name='deploy.output' value='undefined'>
+                  <else>
+                    <copy file='${project.build.directory}/${project.build.finalName}.jar' tofile='${deploy.bundle}/${deploy.bundle.name}' overwrite='true' failonerror='true'/>
+                  </else>
+                </if>
+              </target>
+            </configuration>
+          </execution>
+        </executions>
+
+        <dependencies>
+          <dependency>
+            <groupId>org.tigris.antelope</groupId>
+            <artifactId>antelopetasks</artifactId>
+            <version>3.2.10</version>
+          </dependency>
+        </dependencies>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <extensions>true</extensions>
+
+        <configuration>
+          <instructions>
+            <Bundle-Name>${project.groupId}.${project.artifactId}</Bundle-Name>
+            <Bundle-Activator>${bundle.activator}</Bundle-Activator>
+
+            <Export-Package>${bundle.export.package}</Export-Package>
+            <Import-Package>${bundle.import.package}</Import-Package>
+            <Web-ContextPath>${bundle.web.contextpath}</Web-ContextPath>
+
+            <Require-Bundle>${bundle.requir.bundle}</Require-Bundle>
+            <DynamicImport-Package>${bundle.dynamicimport.package}</DynamicImport-Package>
+            <Fragment-Host>${bundle.fragment.host}</Fragment-Host>
+            <Bundle-Blueprint-Annotation>${bundle.blueprint.annotation}</Bundle-Blueprint-Annotation>
+          </instructions>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-scr-plugin</artifactId>
+
+        <executions>
+          <execution>
+            <id>generate-scr-scrdescriptor</id>
+            <goals>
+              <goal>scr</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+</project>
