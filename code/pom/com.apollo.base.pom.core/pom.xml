@@ -77,9 +77,6 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <argLine>-Xms16m -Xmx256m -XX:PermSize=8m -XX:MaxPermSize=32m</argLine>
-          <includes>
-            <include>**/*.java</include>
-          </includes>
         </configuration>
       </plugin>
     </plugins>
