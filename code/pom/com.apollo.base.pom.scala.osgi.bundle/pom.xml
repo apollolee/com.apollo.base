@@ -139,9 +139,14 @@
         <executions>
           <execution>
             <id>generate-scr-scrdescriptor</id>
+
             <goals>
               <goal>scr</goal>
             </goals>
+
+            <configuration>
+              <scanClasses>true</scanClasses>
+            </configuration>
           </execution>
         </executions>
       </plugin>
